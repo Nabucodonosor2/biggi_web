@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!--HABILITA GOOGLE Analytics 06-05-2022 -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5FKVETHWP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-K5FKVETHWP');
+		</script>
+		
+		<title>BIGGI | Cotizador</title>
+		<!--MH 31122021 -->
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+		<script charset="iso-8859-1" src="js/font_montserrat.js" type="text/javascript"></script>
+		<script charset="iso-8859-1" src="js/font_quattrocento.js" type="text/javascript"></script>
+		<script charset="iso-8859-1" src="../commonlib/trunk/script_js/general.js" type="text/javascript"></script>
+		<script charset="iso-8859-1" src="cotizador.js" type="text/javascript"></script>
+		<script src="help_producto.js" type="text/javascript"></script>
+		<!--  
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+		-->
+		<!-- Styles -->
+		<link rel="stylesheet" href="css/fontawesome/css/all.css">
+		<!-- INI INSTALACION WHATSAPP -->
+		<link rel="stylesheet" href="css/stylews.css">
+		<!-- FIN INSTALACION WHATSAPP -->
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="Respond-Menu/css/styles.css">
+		<link rel="stylesheet" type="text/css" href="css/styleContacto.css">
+		<link rel="stylesheet" type="text/css" href="css/styleInterior.css">
+		<!-- el archivo basic.css determina el estilo de la ventana modal --> 
+		<link rel="stylesheet" href="common_appl/css_modal/basic.css">
+		<style type="text/css">
+			body{background:#e5e5e5;}
+			.input_text{
+				width:98%;
+			}
+			.invert {
+			filter: invert(90%);
+			}
+		</style>
+		<style type="text/css">
+			.empresa {
+				background: #f7f7f7;
+				padding-top: 60px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body onload="f_sin_captcha('{ERROR}')">
+		<!-- Contenido de la ventana, debe ir con el id="basic-modal-content" -->
+		<div id="basic-modal-content"></div>
+		<header>
+			<a href="index.php" id="logo"></a>
+			<nav>
+				<a href="#" id="menu-icon"></a>
+				<ul>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="productos.php">Productos</a></li>
+					<!--  <li><a href="econoline.php">Econoline</a></li> -->
+					<li><a href="representantes.php">Representantes</a></li>
+					<li style="display:{VISIBLE_OFERTAS}"><a href="">Ofertas</a></li>
+					<li><a href="cotizador.php" class="current">Cotizador</a></li>
+					<li class="busc">
+						<form action="buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+							<input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto"">
+						</form>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		
+		<!-- INI INSTALACION WHATSAPP -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<a href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank" class="float" target="_blank">
+				<i class="fa fa-whatsapp my-float"></i>
+			</a>
+		<!-- FIN INSTALACION WHATSAPP -->
+	
+		<!-- Buscador Responsive ---->
+		<li class="buscResp">
+	        <form action="{K_ROOT_URL}buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+	            <input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto">
+	        </form>
+	    </li>
+		<div class="subHeader">
+			<h1>Solicitud de Cotización</h1>
+		</div>
+		<div class="empresa">
+			<h1>VISÍTENOS | CONTÁCTENOS</h1>
+			<h2>AVENIDA PORTUGAL 1726 - SANTIAGO. / LUNES A VIERNES DE 08:30 A 18:00 HRS.</h2>
+			<br>
+			<!-- INI INSTALACION WHATSAPP -->
+			<b>
+				<h1>
+					<span class="fas fa-phone-alt">&nbsp;</span>
+					<a class="tfs_biggi_1" href="tel:+56224126200">22 412 6200</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126201">22 412 6201</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126202">22 412 6202</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126203">22 412 6203</a>
+					<br>
+					<br>
+					<b>
+						<p>
+							<span class="far fa-envelope">&nbsp;</span>
+							<a class="tfs_biggi_1" href="mailto:info@biggi.cl?subject=Contacto via web Comercial BIGGI">INFO@BIGGI.CL</a>
+						</p>
+					</b>
+					<br>
+					<br>
+					<a class="tfs_biggi_99" href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank">Escríbenos por WhatsApp presionando aquí&nbsp;</a>
+					<a class="tfs_biggi_99" href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank">
+						<span class="fa-brands fa-whatsapp fa-2xl" >&nbsp;</span>
+					</a>
+				</h1>
+			</b>
+			<!-- FIN INSTALACION WHATSAPP -->	
+		</div>
+		
+		<!-- COTIZADOR ////////////////////////////////-->
+		<div class="cotzr" id="DIV_COTIZADOR">	
+			<div class="hdr"><h1>productos seleccionados</h1></div>
+			<form accept-charset="iso-8859-1">
+				<table > 
+					<tr class="first">
+						<td width="5%">Detalle</td>
+						<td width="13%">Modelo</td>
+						<td width="58%">Nombre</td>
+						<td width="4%">Cantidad</td>
+					<!-- 	<td width="16%">Precio Unit.</td>  -->
+						<td width="4%">Borrar</td>
+					</tr>
+				</table>
+				<table id="COTIZADOR">
+					<!-- startBlock(COTIZADOR) -->
+					<tr class="{DW_TR_CSS}" id="{DW_TR_ID}">
+						<td align="center" width="5%"><a href="fichaProducto.php?cod_producto={COD_PRODUCTO2}&cod_zona={COD_ZONA}&cod_familia={COD_FAMILIA}" onclick="return detale_producto(this);"><figure style="width:50%; height:50%;"><img src="images/search.gif" border="0"></figure></a></td>
+						<td width="13%">{COD_PRODUCTO}</td>
+						<td width="58%">{NOM_PRODUCTO}</td>
+						<td width="4%">{CANTIDAD}</td>
+						<td width="16%" style="display: none;">{PRECIO_VENTA_PUBLICO} + IVA</td>  
+						<td width="4%"><a href="#"><img id="{DW_TR_ID}" src="images/close.jpg" width="16" onclick="delete_line(this);" height="16"alt="Borrar Item"></a></td>
+					</tr>
+					<!-- endBlock(COTIZADOR) -->
+				</table>
+				<input type="button" value="Eliminar Item" class="sendix" onclick="limpiar();">
+				<input type="button" value="Agregar" class="sendix" onclick="agregar();">
+			</form>
+			<form action="#" method="post" accept-charset="iso-8859-1" >
+				<div class="hdr" style="margin-top:60px;"><h1>Datos para Cotizar</h1></div>
+				<ul class="cotizForm">
+					<li>
+						<input name="NOM_COTIZADOR" 		id="NOM_COTIZADOR" 			type="text" placeholder="&nbsp;&nbsp;Nombre Contacto">
+						<input name="EMAIL_COTIZADOR" 		id="EMAIL_COTIZADOR" 		type="text" placeholder="*&nbsp;&nbsp;E-mail Contacto">
+						<input 		name="FONO_COTIZADOR" 	id="FONO_COTIZADOR" type="text" placeholder="*&nbsp;&nbsp;Telefono Contacto">
+						<input 		name="CEL_COTIZADOR" 	id="CEL_COTIZADOR" 	type="text" placeholder="&nbsp;&nbsp;Celular Contacto">
+						<input name="RUT_COTIZADOR" 		id="RUT_COTIZADOR" 			type="text" placeholder="&nbsp;&nbsp;Rut Empresa" style="width: 433px;"> -
+						<input name="DIG_VERIF_COTIZADOR" 	id="DIG_VERIF_COTIZADOR" 	type="text" style="width: 30px; margin-left: 0px;">
+					</li>
+					<li>
+						<input name="EMPRESA_COTIZADOR" 	id="EMPRESA_COTIZADOR" 		type="text" placeholder="&nbsp;&nbsp;Razon Social Empresa">
+						<input name="CIUDAD_COTIZADOR" 		id="CIUDAD_COTIZADOR" 		type="text" placeholder="&nbsp;&nbsp;Ciudad Empresa">
+						<textarea 	name="OBS_COTIZADOR" 	id="OBS_COTIZADOR" 	type="text" placeholder="&nbsp;Comentarios"></textarea>
+					</li>
+					<li style="float: unset;">
+						<labe class="busc">(*) CAPTCHA</label>
+					</li>
+					<li>
+					 	<div class="g-recaptcha" data-sitekey="6LcG8hwUAAAAAAkOMWAZ94FSg9btlJPhRwlv0S1w" data-callback="enableBtn"></div>
+					 	<input class="input_text" name="VALIDA_NO_SOY_ROBOT" id="VALIDA_NO_SOY_ROBOT" type="hidden" value="N" size="100" maxlength="100" onblur="this.style.borderColor = this.style.borderWidth = this.style.borderStyle = '';" onfocus="this.style.border='1px solid #FF0000'">
+					 	
+					 </li> 
+					 <li style="float: unset;">
+						<label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(*) Campos obligatorios</label>
+					</li>
+				</ul>
+				<input type="submit" value="Solicitar Cotización" class="sendix" onclick="if(!(valida_solicitud())) return false;" style="clear:both;" id="b_enviar_cot" name="b_enviar_cot">																	 
+			</form>
+		</div>
+		<!-- CONTACTO ////////////////////////////////-->
+		<!-- footer-->
+		<div class="contacto">
+			<div class="innerContacto_1">
+				<!-- <p class="slogan">Equipos para grandes cocinas</p> -->
+			
+				<!-- <div class="ctTel"><h1><a href="tel:+56224126200"> (56) 22412 6200</a></h1></div> -->
+				<p class="conTxt">Ubicación</p>
+				<div  class="embed-container maps">
+					<iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zMGCmKXGejE0.k_zfEQAXhndo" style="pointer-events:none" width="1170" height="320"></iframe>
+				</div>
+
+					<div class="ctTel_3">
+						<h1>
+							<a href="tel:+56224126200">(56) 22412 6200</a>
+						</h1>
+					</div>
+					<br><br><br>
+					<div class="ctTel_3">
+						<h1>
+							<a href="tel:+56224126202">(56) 22412 6202</a>
+						</h1>
+					</div>
+					<br><br><br>
+					<div class="ctTel_3">
+						<h1>
+							<a href="tel:+56224126203">(56) 22412 6203</a>
+						</h1>
+					</div>
+					<p class="ctTel_4">VISÍTENOS | CONTÁCTENOS</p>
+					<br><br><br>
+					<p class="ctTel_4">Comercial BiGGI (Chile) S.A.</p><br><br>
+					<p class="ctTel_4">Avenida Portugal 1726.<p><br><br>
+					<p class="ctTel_4">Santiago - Chile.<p><br>
+             <p class="ctTel_webpay_2"><img src="logowp.png" width="181" height="67"></p>
+
+				<!--
+				<p class="tfs_biggi">Comercial BiGGI (Chile) S.A.</p>
+				<p class="tfs_biggi">Portugal 1726, Santiago <p>
+				<p class="tfs_biggi">Santiago - Chile</p>
+				<p><a  class="tfs_biggi" href="tel:+56224126200">Tels. 22412 6200</a> <p>
+				<p><a class="tfs_biggi" href="mailto:info@biggi.cl?subject=Contacto via web Comercial BIGGI">info@biggi.cl</a></p> -->
+			</div>
+		</div>
+		<footer>2022 Comercial BIGGI (Chile) S.A. - Todos los derechos reservados.</footer>
+		<!-- footer -->	
+		<script>
+			$('.maps').click(function () {
+			 $('.maps iframe').css("pointer-events", "auto");
+			});
+		
+			$( ".maps" ).mouseleave(function() {
+			  $('.maps iframe').css("pointer-events", "none"); 
+			});
+			function f_sin_captcha($ve_error){
+				if($ve_error != '')												
+					my_alert($ve_error);
+			}
+		</script>
+		<!-- Modal -->
+		<!-- <script type='text/javascript' src='common_appl/js_modal/jquery.js'></script> -->
+		<script type='text/javascript' src='common_appl/js_modal/jquery.simplemodal.js'></script>
+		<script type='text/javascript' src='common_appl/js_modal/basic.js'></script>
+		<script type='text/javascript' src='common_appl/general_biggi.js'></script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	</body>
+</html>

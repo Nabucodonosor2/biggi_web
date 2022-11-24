@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contacto{background:#d6d6d6;padding:80px 0;border-top:1px #bbb solid;}
+.innerContacto{width:1170px;margin:0 auto;background:url(../images/logoBG.png) no-repeat;padding-top:18px;overflow:auto;}
+.slogan{font-family: 'Quattrocento Sans', sans-serif;text-align:left;margin-top: 40px;padding-bottom:40px;font-weight:400;color:#ed1c24;}
+.contacto li{float:left;width:570px;}
+  .contacto li:first-child{margin-right:30px;}
+.innerContacto iframe {margin-bottom:20px;}
+form p, li:last-child p{margin-bottom:4px;font-size:14px;color:#888;line-height:16px;}
+.ctTel{position:absolute;margin:370px 0 0 420px;padding:12px;background:#ed1c24;border-radius:5px;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;}
+.ctTel h1{color:#fff;font-size:15px;}
+.ctTel h1 a{href:none;color:#fff;}
+.conTxt {color:#777px;margin-bottom:10px;}
+.fnt{margin-bottom:14px;border:1px #ccc solid;height:24px;width:560px;background:#eee;}
+#COMENTARIO_CONTACTO{height:160px;}
+.sendix{background:#82c6bf;border:none;font-family: 'Montserrat', sans-serif;color:#fff;font-weight:700;font-size:14px;text-align:center;text-transform:uppercase;padding:12px 18px;border-radius:5px;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;cursor:pointer;}
+.sendix:hover{background:#69a8a1;}
+footer{background:#575757;padding:24px;font-size:12px;color:#ccc;text-align:center;}
+#Contáctenos{color: #444;
+    font-size: 12px;
+    line-height: 18px;}
+
+@media only screen and (max-width : 1170px) {
+  .contacto li{float:none;width:100%;}
+  .innerContacto{width:80%;margin:0 auto;}
+  .fnt{width:98%;}
+  .innerContacto iframe{width:100%;}
+  .ctTel{display:none;}
+  /*.innerContacto{background:none;}*/
+}
+/*@media only screen and (max-width : 620px) {
+	.ctTel{display:inline;margin-left:0;}
+	.ctTel h1 a{href:tel://+569224126200;}
+	div.desc_foot{display:none;}
+}*/
+.tfs_biggi{
+	color: #888;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+.tfs_rpsts{
+    font-size: 12px;
+    color: #444;
+    line-height: 18px;
+}

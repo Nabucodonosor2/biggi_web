@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1, h5{font-family: 'Montserrat', sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;}
+h2{font-family: 'Quattrocento Sans', sans-serif;font-weight: 400;}
+h3, h4{font-family: 'Montserrat', sans-serif;font-weight:700;font-size:24px;text-transform:uppercase;}
+h4{font-size:22px;margin-bottom:14px;}
+
+.buscResp{display:none;}
+
+.subHeader{background:#ed1c24;margin-top:76px;padding:14px 0;border-top:2px #999 solid;}
+.subHeader h1{width:1170px;margin:0 auto;color:#fff;}
+.subHeader a img{height:20px;width:20px; float:left;margin-left:20px;margin-top:0;}
+.subHeader ol a, .finale{float:left;font-family: 'Montserrat', sans-serif; font-weight:700;font-size:14px;text-transform:uppercase;padding:0 22px;border-right:2px #fff solid;color:#fff;text-decoration:none;margin-bottom:12px;}
+.finale{color:black;border:none;}
+
+.prodDesc{max-width:1172px;margin:0 auto;overflow:auto;}
+.prodDesc li{width:270px;margin-left:30px;float:left;}
+  .prodDesc li:first-child {margin:0;}
+.prodClass{width:100%;background:#fff;border:1px #ccc solid;margin-bottom:30px;padding-bottom:14px; box-shadow:0 0 3px #ccc;}
+.prodClass h1{color:#fff;margin:24px 0 40px 12px;}
+.prodClass ol a{color:#999;font-size:13px;text-decoration:none;}
+  .prodClass ol a:hover{color:#333;}
+.prodClass ol {margin:14px 14px;}
+.xup{display:none;}
+
+.grafEcono{height:253px;background: url(../images/econo.jpg) center;margin-bottom:30px;border:1px #fff solid;border-left:none;border-bottom:none;}
+
+.prodDesc2{background:#4a4a4a;}
+.grafEcono h3{max-width:600px;color:#fff;margin:100px 20px 0 20px;text-shadow:1px 1px 4px #000;}
+
+article{max-width:1210px; margin:30px auto; padding:0 20px;overflow:auto;}
+.prodDisplay{width:298px;border:1px #b5b5b5 solid;background:#b5b5b5;float:left;}
+.prodDisplay h1{padding:14px 0 20px 10px;color:#ed1c24;font-size:16px;}
+.legal{color:white;font-size:9px;font-style:italic;margin-left:10px;}
+.content{max-width:540px;margin-left:330px;}
+article h1{color:#666;margin-bottom:10px;}
+article hr{border:none;border-top:1px #ed1c24 solid;margin-bottom:14px;}
+.content p, .content li{font-size:13px;color:#555;line-height:18px;margin-bottom:20px;}
+.content li{margin-bottom:16px;margin:12px 10px;border-bottom:1px #ddd solid;list-style-image:url(../images/dot.png);}
+   .content li:last-child{border:none;}
+#cesmec{width:90px;background:url(../images/cesmec.png) #fff 5px 5px no-repeat;border:1px #ccc solid;margin:20px 0;padding:24px 0 24px 90px;color:#999;font-weight:bold;}
+.prodApp{float:right;width:270px;border:1px #b5b5b5 solid;background:#fff;}
+.prodApp ol{background:url(../images/icoPDF.png) no-repeat;margin:14px; padding:16px 0 16px 60px;}
+   .prodApp ol:last-child{background:url(../images/icoCalculadora.png) no-repeat;}
+.prodApp ol a{font-family: 'Montserrat', sans-serif;font-weight:700; color:#626262;text-decoration:none;text-transform:uppercase;font-size:11px;}
+
+.xpTablas{margin-left:330px;}
+table {border-collapse:collapse;font-size:12px;width:80%;}
+td{border:1px #888 solid;padding:8px;}
+.tablaTitle{background:#ed1c24;color:#fff;}
+.grey{background:#e5e5e5;}
+
+.headFamil{max-width:1170px; background:#fff; margin:30px auto; overflow:auto; padding-bottom:14px; box-shadow:0 1px 1px #bbb;}
+.headFamil .nmf{background:#ed1c24;color:#fff;padding:14px;}
+.headFamil li{float:left;width:20%;padding-top:12px;}
+.headFamil li a{text-decoration:none;font-size:13px;color:#888;padding-left:10px;}
+   .headFamil li a:hover {color:#000;}
+.headFamil .selected{font-weight:bold;color:#333;}
+
+/* Nuevo voucher productos ////////////////*/
+
+.vouchers{max-width:1170px;margin:0 auto;overflow:auto;padding-bottom:15px;}
+.vouFoto{width:220px;position: absolute;margin:16px 0 16px 16px;}
+.vouchers li{float:left; width:48%; margin:0 1% 20px 1%; background:white; box-shadow:0 1px 1px #bbb; height:415px;}
+.vouchers li h1{margin:14px 14px 14px 250px;height:40px;}
+.vouchers hr{margin-left:250px;border:none;border-top:1px #bbb dotted;margin-bottom:14px;}
+.precio{float:left;width:220px;background:#ed1c24; padding:8px; margin-bottom:20px;margin-top:10px;}
+.precio label{color:#fff;font-size:12px;}
+.cotizador, .catalogo{margin:10px 0 10px 250px; background:url(../images/icoCotiza.png) #d5d5d5 no-repeat; padding:16px 60px; color:#444;}
+.catalogo{background:url(../images/icoCatalog.png) #d5d5d5 no-repeat;}
+   .cotizador:hover{background:url(../images/icoCotiza.png) #b5b5b5 no-repeat;}
+    .catalogo:hover{background:url(../images/icoCatalog.png) #b5b5b5 no-repeat;}
+.vouTxt{height:210px;overflow:hidden;}
+.vouchers ol {margin:0 14px 14px 250px;font-size:12px;color:#777;}
+
+/* ///////////////////////////// */
+   
+.rep{max-width:1170px;margin:30px auto; overflow:auto;}
+.rep li {float:left;background:#fff; height:220px; margin:5px; width:282px; padding-top:100px; box-shadow:0 1px 2px #bbb;}
+.rep li:nth-child(1){background:url(../images/rep1.jpg) #fff no-repeat;}
+.rep li:nth-child(2){background:url(../images/rep2.jpg) #fff no-repeat;}
+.rep li:nth-child(3){background:url(../images/rep3.jpg) #fff no-repeat;}
+.rep li:nth-child(4){background:url(../images/rep4.jpg) #fff no-repeat;}
+.rep li:nth-child(5){background:url(../images/rep5.jpg) #fff no-repeat;}
+.rep li:nth-child(6){background:url(../images/rep6.jpg) #fff no-repeat;}
+.rep li:nth-child(7){background:url(../images/rep7.jpg) #fff no-repeat;}
+.rep h1 {margin-left:10px;}
+.rep li:last-child{display:none;} /* TRUCO RASCA */
+.rep hr {margin:10px;border:0;border-top:1px #ed1c24 solid;}
+.rep p{font-size:12px;margin:10px;color:#444;line-height:18px;}
+
+.cotzr{max-width:1170px; margin:20px auto;background:#fff;box-shadow:0 1px 1px #bbb;padding-bottom:4px;overflow:auto;min-width:680px;}
+.cotzr .hdr{padding:14px;background:#ccc; margin-bottom:12px;}
+.cotzr tr{border-bottom:1px #ccc solid;}
+   .cotzr tr:nth-child(even){background:#eee;}
+.cotzr table{margin:5px auto;width:98%;color:#555;}
+.cotzr td{border:none;}
+.cotzr .first{background:#ed1c24;color:#fff;}
+.ctt{width:100%;}
+.sendix{float:right;margin-right:12px;}
+
+.cotizForm li{float:left;width:568px;margin-left:10px;margin-bottom:10px;}
+.cotizForm input, .cotizForm textarea{margin-left:50px;border:none;background:#eee;padding:10px;width:500px;margin-bottom:10px;}
+	.cotizForm textarea{height:107px;}
+	textarea{font-family:tahoma, helvetica, arial, sans-serif;font-size:13px;}
+
+.ifr{width:1170px;margin:20px auto;}
+
+.accs{float:right;font-family: 'Montserrat', sans-serif;font-weight:700;font-size:14px;text-transform:uppercase;}
+.accs a{color:white;margin-right:40px;}
+.accs a:hover{color:black;}
+
+.ofrts{max-width:1183px;margin:30px auto; overflow:auto;}
+.ofrts li {float:left;margin:5px; width:282px; box-shadow:0 1px 2px #bbb;}
+.ofrts li div{background:#999;padding:10px;}
+   .ofrts li div h1{color:white;}
+.ofrts .bann{float:left;margin-top:10px;width:100%; height:100px;background:url(../images/ofrt.svg) no-repeat;padding-bottom:120px;}
+.ofrts ol{margin:10px 25px;font-size:13px;color:#666;}
+.ofrts .precio, .ofrts a div {margin-left:25px;}
+   .ofrts a div:hover{background:#888;}
+.ofrts li:last-child{display:none;} /* TRUCO RASCA */
+
+.ifr{width:1170px;margin:20px auto;}
+.rep li {float:left;background:#fff; height:220px; margin:5px; width:282px; padding-top:100px; box-shadow:0 1px 2px #bbb;}
+
+/*
+.paginador{margin:0 auto;clear:both;float:right;}
+.paginador ul{margin:0 auto;}
+.paginador li{float:left;margin:0; font-size:13px;box-shadow: none;border:1px #ccc solid; border-right:none;text-align:center;width:34px;}
+   .paginador li:last-child{border-right:1px #ccc solid;}
+   .paginador li:hover{background:#eee;}
+   .paginador a{color:#666;display:block;padding:10px;}
+   .paginador a:hover{color:black;}
+ */
+ 
+ ul.pagination {
+ 	list-style:none;
+ 	text-align:center;
+ 	margin-bottom:20px;
+ 	}
+ul.pagination li{
+	display: inline-block;
+	font-family:helvetica,arial,sans-serif;
+	font-size:12px;
+	padding:6px 5px 6px 5px;
+	min-width: 30px;
+	text-align: center;
+	margin-right: 10px;
+	background:#fff;
+	/* Radius */
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	}
+
+ul.pagination li:last-child { margin-right: 0; }
+ul.pagination li.prev, ul.pagination li.next  { padding-left: 10px; padding-right: 10px; }
+
+ul.pagination.light li{ color: #556270; border: 1px solid #ccc;}
+/* Light Mouse Events */
+ul.pagination.light li:hover {background: #efefef; cursor: pointer;}
+ul.pagination.light li:active {background: #efefef;}
+
+/* Resultados de Busquedas */
+.searchRes{width:1170px; margin:20px auto; background:white; overflow:auto; clear:both;}
+.searchRes li{float:left;}
+.searchRes img{margin:10px;}
+.searchRes h1{margin-top:26px;}
+.searchRes p{margin-top:6px;font-size:12px;color:#888;margin-right:30px;}
+
+.searchRes{padding-bottom:10px;}
+.searchRes li:nth-child(2){width:700px;}
+.searchRes li:nth-child(3){width:200px;}
+.searchRes li:nth-child(4){margin-top:8px;}
+
+/* Accesorios */
+.searchAcc{width:1170px; margin:20px auto; background:white; overflow:auto; clear:both;}
+.searchAcc li{float:left;}
+.searchAcc img{margin:10px;}
+.searchAcc h1{margin-top:26px;}
+.searchAcc p{margin-top:6px;font-size:12px;color:#888;margin-right:30px;}
+
+.searchAcc{padding-bottom:10px;}
+.searchAcc li:nth-child(2){width:700px;}
+.searchAcc li:nth-child(3){width:200px;}
+.searchAccli:nth-child(4){margin-top:8px;}
+
+/* Noticias */
+.container{width:1170px;margin:0 auto;overflow:auto;}
+aside{width:250px;background:#999;float:left;margin:20px 0; max-height:600px; overflow-y:scroll;}
+article{margin-left:280px;margin-top:20px;padding:0;}
+article p{font-size:13px;margin-bottom:20px;width:700px;line-height:16px;}
+article img{margin-bottom:20px;}
+.container aside ol{margin:12px;border-bottom:1px #bbb dotted;padding-bottom:10px;margin-right:40px;}
+    .container ol:last-child{border:none;}
+.container small{font-size:11px;color:#ddd;}
+.container a{font-size:13px;color:#111;font-weight:bold;}
+blockquote{font-size:15px;color:#b00;font-style:italic;margin:10px 0 20px 0;width:700px;}
+.selector{display:none;margin:0 20px 20px 20px;}
+.selIzq{float:left;}
+.selDer{margin-left:54%;}
+.selIzq, .selDer{width:46%;text-align:center;padding:10px 0;background:#ccc;border:1px #bbb solid;
+border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; color:#444;
+}
+.selIzq:hover, .selDer:hover{background:#bbb;}
+
+
+::-webkit-scrollbar {width: 12px;}
+::-webkit-scrollbar-track {background-color: #eee;border-left: 1px solid #ccc;}
+::-webkit-scrollbar-thumb {background-color: #ccc;}
+::-webkit-scrollbar-thumb:hover {background-color: #aaa;}
+   
+@media only screen and (max-width : 1170px) {
+  .flash{display:none;}
+  .subHeader{padding-left:10px;}
+  .subHeader h1{width:100%;}
+  .ifr{display:none;}
+  /*.prodDesc li:first-child{margin-top:20px;}*/
+  #b_volver{margin-left:60%;}
+  .xup{display:inherit;height:30px;}
+  
+	.searchRes{width:96%;}
+	.searchRes li:nth-child(1){width:100px;}
+	.searchRes li:nth-child(2){width:80%;margin-left:20px;}
+	.searchRes li:nth-child(3){width:200px;margin-left:20px;}
+	.searchRes li:nth-child(4){margin-top:8px;}
+	
+	.vouchers li{width:98%;} 
+	.sendix{margin-bottom:20px;}
+	.prodDesc li{width:21%;margin:0 2%;}
+	
+	/* Accesorios */
+    .searchAcc{width:94%;margin:40px auto;}
+    .searchAcc li{float:none;}
+    .searchAcc h1{margin:0 20px;}
+    .searchAcc p{margin:10px 20px;}
+
+    .searchAcc li:nth-child(2){width:auto;}
+    .searchAcc li:nth-child(3){width:auto;}
+    .searchAcc li:nth-child(4){margin-left:10px;}
+}
+
+@media only screen and (max-width : 920px) {   
+	.subHeader{margin-top:0;}
+   .headFamil li{width:25%;}   
+   
+   .buscResp{display:inherit; background:#2d2d30; margin-top:76px; padding:8px;}
+    .buscResp .buscar{width:88%;}
+    .prodDesc li, .prodDesc li:first-child{width:90%;margin:0 5%;}
+}
+
+@media only screen and (max-width : 780px) {
+   .subHeader{padding-bottom:28px;}
+   .prodApp{float:none;clear:both;width:298px;margin-bottom:20px;}
+   .content{margin:0;}
+   .xpTablas{margin:0;width:100%;}
+   .headFamil li{width:33.33%;}
+	.accs{float:none;margin:40px 0 0 24px;clear:both;}
+	.searchRes li:nth-child(3){width:60%;margin-left:20px;}
+	
+	.vouchers li{height:auto;}
+    .vouFoto{width:100%;position:relative;margin:16px auto;text-align:center;}
+    .vouchers li h1, .vouchers hr, .vouchers ol{margin-left:16px;}
+    
+    .precio{float:none;width:auto;margin-left:16px;margin-bottom:10px;}
+    .vouchers li .cotizador, .vouchers li .catalogo{width:auto;margin-left:16px;}
+     
+     /* Noticias */
+    aside{display:none;}
+    article{margin:0;width:100%;}
+    h3{margin:0 20px;}
+    article p{width:auto;margin:20px;margin-top:0;font-size:14px;}
+    blockquote{width:auto;margin:20px;font-size:16px;}
+    article img{width:90%; margin-left:20px;}
+    .container{margin-top:40px;width:auto;}
+    .selector{display:inherit;}
+}
+
+@media only screen and (max-width : 620px) {
+	.headFamil li{width:100%;margin-bottom:10px;}
+}
+@media only screen and (max-width : 420px) {
+	.alert {
+	    margin-bottom: 18px;
+	    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+	    background-color: #fcf8e3;
+	    border: 1px solid #fbeed5;
+	    -webkit-border-radius: 4px;
+	    -moz-border-radius: 4px;
+	    border-radius: 4px;
+	    color: #c09853;
+	}
+}
+.alert {
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    background-color: #fcf8e3;
+    border: 1px solid #fbeed5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #c09853;
+    padding-left: 1%;
+    
+}
+.alert-danger, .alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+}
+.text-warning {
+    color: #2d2d30;
+}

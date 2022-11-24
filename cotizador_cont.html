@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+		<!--HABILITA GOOGLE Analytics 06-05-2022 -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5FKVETHWP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-K5FKVETHWP');
+		</script>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>BIGGI | Cotizador</title>
+<link type="image/x-icon" href="images/favicon.ico" rel="shortcut icon" />
+<!-- Styles -->
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="Respond-Menu/css/styles.css">
+<link rel="stylesheet" type="text/css" href="css/styleContacto.css">
+<link rel="stylesheet" type="text/css" href="css/styleInterior.css">
+<style>
+.list, .btl{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #fff;
+}
+body{background:#e5e5e5;}
+.list{color: #555;}
+.list td{ border-bottom: 1px #999 dotted;}
+.btl{ background: red; font-weight: bold;}
+#b_volver{margin-left:26%;}
+.input_text{width:70%;
+  background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    height: 24px;
+    margin-bottom: 14px;
+    width: 560px;}
+.input_num{
+ background: #eee none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    height: 24px;
+    margin-bottom: 14px;
+}
+.invert {filter: invert(90%);}
+.productos{width: 50%;margin:24px 0 40px 25%;}
+.sendix2 {
+    margin-right: 12px;
+}
+.sendix2 {
+    background: #82c6bf none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 18px;
+    text-align: center;
+    text-transform: uppercase;
+}
+</style>
+<script charset="iso-8859-1" src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+<script charset="iso-8859-1" src="js/font_montserrat.js" type="text/javascript"></script>
+<script charset="iso-8859-1" src="js/font_quattrocento.js" type="text/javascript"></script>
+<script charset="iso-8859-1" src="../commonlib/trunk/script_js/general.js" type="text/javascript"></script>
+</head>
+
+<script type="text/javascript">
+function validacion1() {
+
+var nombre = document.getElementById("NOMBRE_0").value;
+var email = document.getElementById("EMAIL_0").value;
+var cod_ciudad = document.getElementById('CIUDAD_0').value;
+var telefono = document.getElementById("TELEFONO_0").value;
+
+if (nombre == 0) {
+    alert("Por favor ingresar Nombre Contacto");
+    return false;
+}
+if (email == 0) {
+   	alert("Por favor ingresar E-mail Contacto");
+    return false;
+}
+if  (cod_ciudad == 0) {
+    alert("Por favor seleccionar Ciudad");
+    return false;
+}
+if  (telefono == 0) {
+    alert("Por favor escriba su telefono");
+    return false;
+}
+   alert("Mensaje enviado, nos pondremos en contacto con Ud. \n A continuación sírvase revisar vuestra solicitud de cotización.");  
+}
+function valida_numero(num){
+    if (!/^([0-9])*$/.test(num)){
+      alert("El(los) valor(es) " + num + " no es(son) un número");
+     	    document.getElementById('RUT_0').value = '';
+     		document.getElementById('DIG_VERIF_0').value = '';
+     		document.getElementById('RUT_0').focus();
+    }
+}
+</script>
+
+<body>
+	<header>
+		<a href="index.php" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"><figure class="cnt_menu"><img class="invert" src="images/navicon-round.png" /></figure></a>
+			<ul>
+				<li><a href="productos.php" >Productos</a></li>
+				<!-- <li><a href="econoline.php">Econoline</a></li> -->
+				<li><a href="representantes.php">Representantes</a></li>
+				<li style="display:{VISIBLE_OFERTAS}"><a href="ofertas.php">Ofertas</a></li>
+				<li><a href="cotizador.php" class="current">Cotizador</a></li>
+				<li class="busc">
+					<form action="buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+						<input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto"">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header> 
+	<div class="subHeader">
+		<h1>Solicitud de Cotización</h1>
+	</div>
+	<div class="productos">
+		<ul>
+				<li>
+					<form action="" method="post">
+						<ul>
+							<li>
+								<p>Nombre (*)</p>
+								{NOMBRE}
+							</li>
+							<li>
+								<p>Email (*)</p>
+								{EMAIL}
+							</li>
+							<li>
+								<p>Empresa</p>
+								{EMPRESA}
+							</li>
+							<li>
+								<p>Rut</p>
+								{RUT} - {DIG_VERIF}
+							</li>
+							<li>
+								<p>Ciudad (*)</p>
+								{CIUDAD}
+							</li>
+							<li>
+								<p>Teléfono (*)</p>
+								{TELEFONO}
+							</li>
+							<li>
+								<p>Celular</p>
+								{CELULAR}
+							</li>
+							<li>
+								<p>Consultas y Comentarios (opcional)</p>
+								<textarea name="comentarios" id="comentarios"  class="fnt"></textarea>
+							</li>
+							<li>
+	               				<p>Campos Obligatorios(*)
+	               				<input name="b_volver" class="sendix2" type="submit" value="Volver" align="left" id="b_volver"> 
+	                			<input name="b_enviar" class=sendix2 type="submit" value="Enviar" align="left" id="b_enviar" onclick="return validacion1();">
+	               				</p>
+							</li>
+						</ul>
+					</form>
+				</li>
+			</ul>
+		</div>
+
+	<!-- footer-->
+	{K_FOOTER_WEB}
+	<!-- footer -->	
+	<script>
+		$('.maps').click(function () {
+		 $('.maps iframe').css("pointer-events", "auto");
+		});
+	
+		$( ".maps" ).mouseleave(function() {
+		  $('.maps iframe').css("pointer-events", "none"); 
+		});
+	</script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

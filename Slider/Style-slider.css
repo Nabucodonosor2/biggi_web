@@ -1,0 +1,105 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	margin:0;
+	}
+#slideshow {
+	top:10px;
+	width:100%;
+	height:500px;
+	border-bottom:10px #ed1c24 solid;
+	}
+#slideshow div {
+	width:100%;
+	text-align:center;
+	height:500px;
+	}
+.sld1{background:url(../images/sldr1.jpg) center;}
+.sld2{background:url(../images/sldr2.jpg) center;}
+.sld3{background:url(../images/sldr3.jpg) center;}
+.sld4{background:url(../images/sldr4.jpg) center;}
+
+.sld1 h1, .sld2 h1, .sld3 h1, .sld4 h1{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:700;
+	font-size:42px;
+	color:#fff;
+	margin:240px 40px 5px 40px;
+	text-align:center;
+	text-transform:uppercase;
+
+	/* text-shadow:0 0 4px #555; */
+	/*text-shadow: 2px 2px #ff0000; */
+	text-shadow: 2px 5px #625f5f;
+}
+#slideshow div p{
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-weight: 400;
+	font-size:30px;
+	color:#fff;
+	margin:0 40px;
+	text-align:center;
+
+	/*text-shadow:0 0 3px #555;*/
+	text-shadow: 2px 2px #625f5f;
+}
+
+.prev a, .next a {
+	position:absolute;
+	display:block;
+	top:220px;
+	background:#000;
+	opacity:0.5;
+	filter.alpha(opacity=50);
+	z-index:9999;
+	padding:30px 10px;
+	/*
+	font-size:50px;
+	font-weight:bold;
+	text-decoration:none;
+	color:#FFF;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+	*/
+	}
+.prev a:hover, .next a:hover{
+	background:#000;
+	}
+.prev a {
+	left:0px;
+	}
+.next a {
+	right:0px;
+	}
+.nav {
+	margin:0px auto;
+	width:900px;
+	text-align:center;
+	margin-top:50px;
+	}
+.nav a {
+	display:block;
+	float:left;
+	padding:10px;
+	background:#333;
+	text-decoration:none;
+	color:#FFF;
+	-webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+	}
+.nav a:hover{
+	background:#000;
+	}
+.nav a.activeSlide {
+	background:#666;
+	}
+
+	@media only screen and (max-width : 500px) {
+		.prev a, .next a {display:none;}
+	}

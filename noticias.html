@@ -1,0 +1,681 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+		<!--HABILITA GOOGLE Analytics 06-05-2022 -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5FKVETHWP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-K5FKVETHWP');
+		</script>
+		
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Noticias | Biggi</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<script charset="iso-8859-1" src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+	<script charset="iso-8859-1" src="js/font_montserrat.js" type="text/javascript"></script>
+	<script charset="iso-8859-1" src="js/font_quattrocento.js" type="text/javascript"></script>
+	<script charset="iso-8859-1" src="../../commonlib/trunk/script_js/general.js" type="text/javascript"></script>
+	
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="Respond-Menu/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/styleContacto.css">
+	<link rel="stylesheet" type="text/css" href="Slider/Style-slider.css">
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<style type="text/css">
+		body{background:#e5e5e5;}
+	</style>
+	<!-- Dentro del head deben ir los siguietes links:  -->
+	<!-- El primero está en todos los archivos -->
+	<link rel="stylesheet" href="css/styleInterior.css">
+	<!-- el archivo basic.css determina el estilo de la ventana modal --> 
+	<link rel="stylesheet" href="common_appl/css_modal/basic.css">
+</head>
+<body>
+	<!-- Contenido de la ventana, debe ir con el id="basic-modal-content" -->
+	<div id="basic-modal-content">
+	</div>
+	<header>
+		<a href="index.php" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="productos.php">Productos</a></li>
+				<!-- <li><a href="econoline.php">Econoline</a></li> -->
+				<li><a href="representantes.php">Representantes</a></li>
+				<li style="display:{VISIBLE_OFERTAS}"><a href="ofertas.php">Ofertas</a></li>
+				<li><a href="cotizador.php">Cotizador</a></li>
+				<li><a href="noticias.php" class="current">Noticias</a></li>
+				<li class="busc">
+					<form action="buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+						<input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto"">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Buscador Responsive ---->
+	<li class="buscResp">
+        <form action="{K_ROOT_URL}buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+            <input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto">
+        </form>
+    </li>
+	<div class="subHeader">
+		<h1>noticias</h1>
+	</div>
+	
+	<div class="container">
+       <!--<div class="selector">
+           <a href="#"><div class="selIzq">Anterior</div></a>
+           <a href="#"><div class="selDer">Siguiente</div></a>
+       </div>-->
+        <aside>
+            <ol> 
+				<small>24/12/2015</small></br>
+				<a href="noticias/noticia151.htm" target="view_noti" >NAVIDAD 2015 EN BIGGI</a>
+			</ol>
+			<ol> 
+				<small>04/12/2015</small></br>
+				<a href="noticias/noticia150.htm" target="view_noti" >COLEGIO SAGRADOS CORAZONES ENTREGA SERVICIO DE EXCELENCIA EN AolMENTACION</a>
+			</ol>
+			<ol>
+				<small>19/11/2015</small></br>
+				<a href="noticias/noticia149.htm" target="view_noti" >BODEGAS SAN FRANCISCO : MÁS DE 10 AÑOS TRABAJANDO EN AolANZA CON BIGGI PARA UN SERVICIO DE EXCELENCIA</a>
+			</ol>
+			<ol> 
+				<small>09/11/2015</small></br>
+				<a href="noticias/noticia148.htm" target="view_noti" >MOGAMBO BURGER & GRILL HA ELEGIDO A BIGGI PARA SU COCINA.</a>
+			</ol>
+			<ol> 
+				<small>30/10/2015</small></br>
+				<a href="noticias/noticia147.htm" target="view_noti" >RESTAURANTE FORMENTERA, UNA NUEVA PROPUESTA EN COMIDA ESPA&NtildeOLA EN PROVIDENCIA.</a>
+			</ol>
+			<ol> 
+				<small>23/10/2015</small></br>
+				<a href="noticias/noticia146.htm" target="view_noti" >BIGGI INCORPORA METODO DE PAGO WEBPAY Y ESTRENA EL PAGO EN 6 CUOTAS.</a>
+			</ol>
+			<ol> 
+				<small>09/10/2015</small></br>
+				<a href="noticias/noticia145.htm" target="view_noti" >GRUPO VALERIO OPTA NUEVAMENTE POR LA CAolDAD DE BIGGI  EN SU RESTAURANTE  "CASA VALERIO PAN".</a>
+			</ol>
+			<ol> 
+				<small>29/12/2014</small></br>
+				<a href="noticias/noticia144.htm" target="view_noti" >NAVIDAD 2014 EN BIGGI.</a>
+			</ol>
+			<ol> 
+				<small>08/09/2014</small></br>
+				<a href="noticias/noticia143.htm" target="view_noti" >BIGGI PARTICIPA CON ÉXITO EN ESPACIO FOOD & SERVICE 2014.</a>
+			</ol>
+			<ol> 
+				<small>21/08/2014</small></br>
+				<a href="noticias/noticia142.htm" target="view_noti" >BIGGI ESTARÁ PRESENTE EN FERIA FOOD & SERVICE 2014.</a>
+			</ol>
+			<ol> 
+				<small>20/08/2014</small></br>
+				<a href="noticias/noticia141.htm" target="view_noti" >CAPACITACIÓN INTERNA: VITRINAS REFRIGERADAS.</a>
+			</ol>
+			<ol> 
+				<small>12/08/2014</small></br>
+				<a href="noticias/noticia140.htm" target="view_noti" >NUESTRA CHEF PARTICIPA EN EVENTO "RUTA SALUDABLE".</a>
+			</ol>
+			<ol> 
+				<small>12/08/2014</small></br>
+				<a href="noticias/noticia139.htm" target="view_noti" >NUEVA CAPACITACIÓN INTERNA: FREIDORAS.</a>
+			</ol>
+			<ol> 
+				<small>04/06/2014</small></br>
+				<a href="noticias/noticia138.htm" target="view_noti" >BIGGI  EJECUTA REMODELACIÓN DEL CASINO PERTENECIENTE AL COLEGIO "ALONSO DE ERCILLA".</a>
+			</ol>
+			<ol> 
+				<small>04/06/2014</small></br>
+				<a href="noticias/noticia137.htm" target="view_noti" >BIGGI IMPLEMENTA PROYECTO DE CASINO PARA EMPRESA "ANASAC".</a>
+			</ol>
+			<ol> 
+				<small>19/05/2014</small></br>
+				<a href="noticias/noticia135.htm" target="view_noti" >CHEF EJECUTIVA DE BIGGI ES INVESTIDA POR "LES TOQUES BLANCHES".</a>
+			</ol>
+			<ol> 
+				<small>27/03/2014</small></br>
+				<a href="noticias/noticia134.htm" target="view_noti" >BIGGI NUEVAMENTE PRESENTE EN ENCUENTRO DE INDUSTRIA GASTRONÓMICA CHILENA EIIGA 2014</a>
+			</ol>
+			<ol> 
+				<small>31/01/2014</small></br>
+				<a href="noticias/noticia133.htm" target="view_noti" >Jardín de Lotus eolge equipar su cocina con BIGGI</a>
+			</ol>
+			<ol> 
+				<small>30/01/2014</small></br>
+				<a href="noticias/noticia132.htm" target="view_noti" >Hospital de Niños Roberto del Río adquiere productos BIGGI a través de Chile Compra</a>
+			</ol>  
+			<ol> 
+				<small>15/01/2014</small></br>
+				<a href="noticias/noticia131.htm" target="view_noti" >Caja 18 prefiere BIGGI:La Caja de Compensación 18 de Septiembre vuelve a elegir BIGGI para equipar su casino</a>
+			</ol> 
+			<ol> 
+				<small>30/12/2013</small></br>
+				<a href="noticias/noticia130.htm" target="view_noti" >BIGGI EN HOTEL DIEGO DE ALMAGRO CALAMA</a>
+			</ol> 
+			<ol> 
+				<small>16/12/2013</small></br>
+				<a href="noticias/noticia129.htm" target="view_noti" >PRODUCTOS BIGGI EN olM CHILE</a>
+			</ol> 
+			<ol> 
+				<small>10/12/2013</small></br>
+				<a href="noticias/noticia128.htm" target="view_noti" >XPERT SOLUCIONES INTEGRALES CONFÍA EN BIGGI</a>
+			</ol> 
+			<ol> 
+				<small>10/12/2013</small></br>
+				<a href="noticias/noticia127.htm" target="view_noti" >TUR BUS EolGE LA CAolDAD DE NUESTRA EMPRESA</a>
+			</ol>
+			<ol> 
+				<small>04/12/2013</small></br>
+				<a href="noticias/noticia126.htm" target="view_noti" >FERIA INTERNACIONAL DE PANADERÍA, PASTELERÍA Y CHOCOLATERÍA SE REAolZÓ EN SANTIAGO</a>
+			</ol> 
+			<ol> 
+				<small>02/12/2013</small></br>
+				<a href="noticias/noticia125.htm" target="view_noti" >BIGGI EN olCEO DE CONCEPCIÓN</a>
+			</ol> 
+			<ol> 
+				<small>02/12/2013</small></br>
+				<a href="noticias/noticia124.htm" target="view_noti" >COLEGIO COLONIAL DE PIRQUE EQUIPA SU CASINO CON BIGGI</a>
+			</ol>
+			<ol> 
+				<small>28/11/2013</small></br>
+				<a href="noticias/noticia123.htm" target="view_noti" >RESTAURANT PERÚ MÁGICO OPTA POR LA CAolDAD DE BIGGI</a>
+			</ol>
+			<ol> 
+				<small>26/11/2013</small></br>
+				<a href="noticias/noticia122.htm" target="view_noti" >AGROINDUSTRIA AURORA AUSTRAolS EQUIPÓ CON BIGGI SU CASINO</a>
+			</ol>
+			<ol> 
+				<small>26/11/2013</small></br>
+				<a href="noticias/noticia121.htm" target="view_noti" >CARABINEROS CONFÍA EN BIGGI PARA EQUIPAR UNO DE SUS CASINOS</a>
+			</ol>
+			<ol> 
+				<small>19/11/2013</small></br>
+				<a href="noticias/noticia120.htm" target="view_noti" >NUESTROS PRODUCTOS EN UDP CENTRO.</a>
+			</ol> 
+			<ol> 
+				<small>19/11/2013</small></br>
+				<a href="noticias/noticia119.htm" target="view_noti" >NUEVO RESTAURANT EN COPIAPÓ ADQUIERE PRODUCTOS BIGGI.</a>
+			</ol> 
+			<ol> 
+				<small>30/10/2013</small></br>
+				<a href="noticias/noticia118.htm" target="view_noti" >EVERCRISP OPTA POR BIGGI PARA SU CASINO</a>
+			</ol> 
+			<ol> 
+				<small>17/10/2013</small></br>
+				<a href="noticias/noticia117.htm" target="view_noti" >NUEVAMENTE BIGGI PARTICIPA EN CAMPEONATO DE GOLF TECNO FAST ATCO</a>
+			</ol> 
+			<ol> 
+				<small>2/10/2013</small></br>
+				<a href="noticias/noticia116.htm" target="view_noti" >UDP CONFÍA UNA VEZ MÁS EN BIGGI</a>
+			</ol> 
+			<ol> 
+				<small>17/10/2013</small></br>
+				<a href="noticias/noticia115.htm" target="view_noti" >EolGEN LA CAolDAD DE BIGGI PARA CASINO DEL CENTRO.</a>
+			</ol> 
+			<ol> 
+				<small>11/10/2013</small></br>
+				<a href="noticias/noticia114.htm" target="view_noti" >BIGGI EQUIPA NUEVO CASINO DE SCANAVINI</a>
+			</ol> 
+			<ol> 
+				<small>10/10/2013</small></br>
+				<a href="noticias/noticia113.htm" target="view_noti" >ABASTIBLE APUESTA POR BIGGI PARA REMODELAR SU CASINO</a>
+			</ol> 
+			<ol> 
+				<small>04/10/2013</small></br>
+				<a href="noticias/noticia112.htm" target="view_noti" >El GALEÓN RESTAURANT APUESTA POR BIGGI</a>
+			</ol> 
+			<ol> 
+				<small>02/10/2013</small></br>
+				<a href="noticias/noticia111.htm" target="view_noti" >BIGGI EN MALL DEL CENTRO DE CONCEPCIÓN</a>
+			</ol> 
+			<ol> 
+				<small>26/09/2013</small></br>
+				<a href="noticias/noticia110.htm" target="view_noti" >ADT EolGE NUEVAMENTE LA CAolDAD DE BIGGI</a>
+			</ol>  
+			<ol> 
+				<small>26/09/2013</small></br>
+				<a href="noticias/noticia109.htm" target="view_noti" >RESTOBAR BARRA NORTE ADQUIERE PRODUCTOS DE NUESTRA EMPRESA</a>
+			</ol> 
+			<!-- <ol> 
+				<small>16/09/2013</small></br>
+				DELEGACIÓN DE ALTO MANDO DEL EJÉRCITO VISITA BIGGI<a href="noticias/noticia108.htm" target="view_noti" >ver noticia</a>
+			</ol> -->
+			<ol> 
+				<small>09/09/2013</small></br>
+				<a href="noticias/noticia107.htm" target="view_noti" >PRODUCTOS BIGGI EN IMPREGAF</a>
+			</ol> 
+			<ol> 
+				<small>02/09/2013</small></br>
+				<a href="noticias/noticia106.htm" target="view_noti" >BIGGI REMODELA EQUIPOS DE COLEGIO EolSA VALDÉS</a>
+			</ol> 
+			<ol> 
+				<small>02/09/2013</small></br>
+				<a href="noticias/noticia105.htm" target="view_noti" >CCU OPTA POR BIGGI PARA SUS NUEVOS CASINOS</a>
+			</ol> 
+			<ol> 
+				<small>23/08/2013</small></br>
+				<a href="noticias/noticia104.htm" target="view_noti" >MOLLER+R&B EQUIPA SU CASINO CON PRODUCTOS BIGGI</a>
+			</ol> 
+			<ol> 
+				<small>23/08/2013</small></br>
+				<a href="noticias/noticia103.htm" target="view_noti" >BIGGI OTORGA CAPACITACION EN NUEVO RESTAURANT SOTELO</a>
+			</ol>
+			<ol> 
+				<small>23/08/2013</small></br>
+				<a href="noticias/noticia102.htm" target="view_noti" >EMPANADAS CASERAS GOURMET ADQUIERE PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>13/08/2013</small></br>
+				<a href="noticias/noticia101.htm" target="view_noti" >CARolTOS CASINOS EQUIPA SUS EMPRESAS CON BIGGI</a>
+			</ol>
+			<ol> 
+				<small>12/08/2013</small></br>
+				<a href="noticias/noticia100.htm" target="view_noti" >CAFÉ RESTAURANT TAURUNUM CONFÍA EN LA CAolDAD DE BIGGI</a>
+			</ol>
+			<ol> 
+				<small>09/08/2013</small></br>
+				<a href="noticias/noticia99.htm" target="view_noti" >INAUGURAN RESTAURANT INARI CON EQUIPOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>07/08/2013</small></br>
+				<a href="noticias/noticia98.htm" target="view_noti" >BIGGI NO PODÍA DEJAR DE PARTICIPAR EN LA TERCERA VERSIÓN DE ESPACIO FOOD&SERVICE</a>
+			</ol>
+			<ol> 
+				<small>19/07/2013</small></br>
+				<a href="noticias/noticia97.htm" target="view_noti" >RESTAURANT SABORES DEL CAMPO CONFÍA EN PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>12/07/2013</small></br>
+				<a href="noticias/noticia96.htm" target="view_noti" >NUESTRA EMPRESA EN BANCOESTADO</a>
+			</ol>
+			<ol> 
+				<small>10/07/2013</small></br>
+				<a href="noticias/noticia95.htm" target="view_noti" >GRANFER APUESTA POR BIGGI</a>
+			</ol>
+			<ol> 
+				<small>25/06/2013</small></br>
+				<a href="noticias/noticia94.htm" target="view_noti" >SAHTEIN ADQUIERE NUEVAMENTE PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>21/06/2013</small></br>
+				<a href="noticias/noticia93.htm" target="view_noti" >TOSTADURÍA TALCA CONFÍA UNA VEZ MAS EN NUESTRA EMPRESA</a>
+			</ol>
+			<ol> 
+				<small>21/06/2013</small></br>
+				<a href="noticias/noticia92.htm" target="view_noti" >BRADFORD SCHOOL APOSTÓ POR BIGGI PARA SU NUEVO CASINO</a>
+			</ol>
+			<ol> 
+				<small>18/06/2013</small></br>
+				<a href="noticias/noticia91.htm" target="view_noti" >RESTAURANT EL HUERTO EolGE LA CAolDAD DE BIGGI</a>
+			</ol>
+			<ol> 
+				<small>17/06/2013</small></br>
+				<a href="noticias/noticia90.htm" target="view_noti" >EXPONOR 2013 TIENE A BIGGI ENTRE SUS EXPOSITORES</a>
+			</ol>
+			<ol> 
+				<small>04/06/2013</small></br>
+				<a href="noticias/noticia89.htm" target="view_noti" >DESDE SUS INICIOS HOTEL DIEGO DE ALMAGRO CONFÍA EN BIGGI</a>
+			</ol>
+			<ol> 
+				<small>30/05/2013</small></br>
+				<a href="noticias/noticia88.htm" target="view_noti" >AGROINDUSTRIA CONALES OPTA POR NUESTROS EQUIPOS</a>
+			</ol>
+			<ol> 
+				<small>30/05/2013</small></br>
+				<a href="noticias/noticia87.htm" target="view_noti" >EDIFICIO SENIORITY CONFÍA EN BIGGI</a>
+			</ol>
+			<ol> 
+				<small>24/05/2013</small></br>
+				<a href="noticias/noticia85.htm" target="view_noti" >CHINA RESTAURANT IMPERIAL CONFIA EN BIGGI</a>
+			</ol>
+			<ol> 
+				<small>24/05/2013</small></br>
+				<a href="noticias/noticia86.htm" target="view_noti" >ALUMNOS DE COLEGIO MARIANO EGAÑA YA CUENTAN CON SU CASINO</a>
+			</ol>
+			<ol> 
+				<small>20/05/2013</small></br>
+				<a href="noticias/noticia84.htm" target="view_noti" >BIGGI EQUIPA NUEVO CASINO DE VIDRIOS olRQU&#201N</a>
+			</ol>
+			<ol> 
+				<small>17/05/2013</small></br>
+				<a href="noticias/noticia83.htm" target="view_noti" >NUESTROS EQUIPOS EN HOSPITAL PARROQUIAL DE SAN BERNARDO</a>
+			</ol>
+			<ol> 
+				<small>16/05/2013</small></br>
+				<a href="noticias/noticia82.htm" target="view_noti" >POMFRIT CONOCE A BIGGI</a>
+			</ol>
+			<ol> 
+				<small>16/05/2013</small></br>
+				<a href="noticias/noticia81.htm" target="view_noti" >JARD&#205N DE FUNDACI&#211N INTEGRA SE EQUIPA CON BIGGI A TRAV&#201S DE GRANFER</a>
+			</ol>
+			<ol> 
+				<small>10/05/2013</small></br>
+				<a href="noticias/noticia80.htm" target="view_noti" >REMODELACION EN TELET&#211N ANTOFAGASTA</a>
+			</ol>
+			<ol> 
+				<small>02/05/2013</small></br>
+				<a href="noticias/noticia79.htm" target="view_noti" >PRESENTES EN CURIC&#211</a>
+			</ol>
+			<ol> 
+				<small>29/04/2013</small></br>
+				<a href="noticias/noticia78.htm" target="view_noti" >EKolPSE Y BIGGI, SERVICIOS DE AolMENTACI&#211N A TODA PRUEBA</a>
+			</ol>
+			<ol> 
+				<small>18/04/2013</small></br>
+				<a href="noticias/noticia77.htm" target="view_noti" >FUNDACI&#211N PARENTESIS CONF&#205A EN BIGGI</a>
+			</ol>
+			<ol> 
+				<small>18/04/2013</small></br>
+				<a href="noticias/noticia76.htm" target="view_noti" >BIGGI EN PUERTO VARAS</a>
+			</ol>
+			<ol> 
+				<small>05/04/2013</small></br>
+				<a href="noticias/noticia74.htm" target="view_noti" >ABB REMODELA SU CASINO CON PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>05/04/2013</small></br>
+				<a href="noticias/noticia75.htm" target="view_noti" >RESTAURANT DONDE GUIDO ADQUIERE EQUIPOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>22/03/2013</small></br>
+				<a href="noticias/noticia73.htm" target="view_noti" >BIGGI EN PRIMER ENCUENTRO DE INDUSTRIA GASTRON&#211MICA CHILENA</a>
+			</ol>
+			<ol> 
+				<small>04/03/2013</small></br>
+				<a href="noticias/noticia72.htm" target="view_noti" >BIGGI EQUIPA NUEVO CASINO DE TRANSPORTES TAMARUGAL</a>
+			</ol>
+			<ol> 
+				<small>11/02/2013</small></br>
+				<a href="noticias/noticia71.htm" target="view_noti" >PASTELER&Iacute;A STRINDBERG EolGI&Oacute; A BIGGI PARA SU EQUIPAMIENTO</a>
+			</ol>
+			<ol> 
+				<small>11/02/2013</small></br>
+				<a href="noticias/noticia70.htm" target="view_noti" >KENTUCKY CONF&Iacute;A NUEVAMENTE EN NUESTRA EMPRESA</a>
+			</ol>
+			<ol> 
+				<small>05/02/2013</small></br>
+				<a href="noticias/noticia69.htm" target="view_noti" >BIGGI EN EL SENAME</a>
+			</ol>
+			<ol> 
+				<small>05/02/2013</small></br>
+				<a href="noticias/noticia68.htm" target="view_noti" >METolFE APUESTA UNA VEZ M&#211S POR BIGGI</a>
+			</ol>
+			<ol> 
+				<small>05/02/2013</small></br>
+				<a href="noticias/noticia67.htm" target="view_noti" >olNDE GAS REMODELA SU CASINO CON PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>28/01/2013</small></br>
+				<a href="noticias/noticia66.htm" target="view_noti" >HOTEL CLUB ALEMAN EolGI&#211 A BIGGI</a>
+			</ol>
+			<ol> 
+				<small>28/01/2013</small></br>
+				<a href="noticias/noticia65.htm" target="view_noti" >INAUGURAN CAF&#201 DUE EN BUIN</a>
+			</ol>
+			<ol> 
+				<small>28/01/2013</small></br>
+				<a href="noticias/noticia64.htm" target="view_noti" >CECINAS BIANCHINI EolGE LA CAolDAD DE BIGGI</a>
+			</ol>
+			<ol> 
+				<small>23/01/2013</small></br>
+				<a href="noticias/noticia63.htm" target="view_noti" >TRABAJADORES DE UNILEVER TIENEN NUEVO CASINO</a>
+			</ol>
+			<ol> 
+				<small>17/01/2013</small></br>
+				<a href="noticias/noticia62.htm" target="view_noti" >CAJA DE COMPENSACI&#211N 18 DE SEPTIEMBRE APOST&#211 POR BIGGI UNA VEZ M&#193S</a>
+			</ol>
+			<ol> 
+				<small>17/01/2013</small></br>
+				<a href="noticias/noticia61.htm" target="view_noti" >BIGGI EN RESTAURANT AJ&#205 SECO</a>
+			</ol>
+			<ol> 
+				<small>20/12/2012</small></br>
+				<a href="noticias/noticia59.htm" target="view_noti" >CASINO DE KOMATSU SE EQUIPA CON PRODUCTOS BIGGI</a>
+			</ol>
+			<ol> 
+				<small>10/12/2012</small></br>
+				<a href="noticias/noticia57.htm" target="view_noti" >COLEGIO TERESITA DE LOS ANDES PONE EN MARCHA CASINO EN EL MARCO DE SU REMODELACION</a>
+			</ol>
+			<ol> 
+				<small>10/12/2012</small></br>
+				<a href="noticias/noticia54.htm" target="view_noti" >EL COLEGIO ARTURO PRAT EolGE A BIGGI PARA IMPLEMENTAR SU CASINO</a>
+			</ol>
+			<ol> 
+				<small>07/12/2012</small></br>
+				<a href="noticias/noticia53.htm" target="view_noti" >EXPONAVAL 2012 TUVO A BIGGI ENTRE SUS EXPOSITORES</a>
+			</ol>
+			<ol> 
+				<small>05/12/2012</small></br>
+				<a href="noticias/noticia58.htm" target="view_noti" >CENTRO DE DISTRIBUCI&#211N UNIMARC TIENE NUEVO CASINO</a>
+			</ol>
+			<ol> 
+				<small>30/11/2012</small></br>
+				<a href="noticias/noticia56.htm" target="view_noti" >CENTRO EDUCACIONAL MARIANO EGAÑA REMODELA SU CASINO</a>
+			</ol>
+			<ol> 
+				<small>21/11/2012</small></br>
+				<a href="noticias/noticia52.htm" target="view_noti" >EDYCE TALCAHUANO REMODEL&#211 SU CENTRAL DE AolMENTACI&#211N CON BIGGI.</a>
+			</ol>
+			<ol> 
+				<small>21/11/2012</small></br>
+				<a href="noticias/noticia51.htm" target="view_noti" >ColNICA ALEMANA DE TEMUCO REMODELA SU CASINO.</a>
+			</ol>
+			<ol> 
+				<small>16/11/2012</small></br>
+				<a href="noticias/noticia50.htm" target="view_noti" >BIGGI PARTICIPA EN CEREMONIA DE TITasideACI&#211N DE CORPORACI&#211N EDUCACIONAL DE LA CONSTRUCCI&#211N Y olCEO POolVALENTE "RAFAEL DONOSO CARRASCO"</a>
+			</ol>
+			<ol>
+				<small>14/11/2012</small></br>
+				<a href="noticias/noticia49.htm" target="view_noti" >NURIA CONF&#205A UNA VEZ MAS EN NUESTRA EMPRESA</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia48.htm" target="view_noti" >NUEVA APUESTA GASTRON&#211MICA CUENTA CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia46.htm" target="view_noti" >CAMPEONATO DE GOLF TECNO FAST ATCO CUENTA CON PARTICIPACI&#211N DE BIGGI UNA VEZ M&#193S</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia47.htm" target="view_noti" >TRANSPORTES TAMARUGAL EQUIP&#211 CON BIGGI CASINO DE LAMPA</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia45.htm" target="view_noti" >RESTAURANT MR. BUEY OPT&#211 POR LA CAolDAD DE BIGGI</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia44.htm" target="view_noti" >HOSTAL EN LAJA CONF&#205A EN PRODUCTOS BIGGI</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia43.htm" target="view_noti" >COLCHONES MANTAHUE EQUIPA SU NUEVO CASINO</a>
+			</ol>
+			<ol>
+				<small>31/10/2012</small></br>
+				<a href="noticias/noticia42.htm" target="view_noti" >NUEVA APUESTA GASTRON&#211MICA CUENTA CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>25/10/2012</small></br>
+				<a href="noticias/noticia40.htm" target="view_noti" >ESCUELA JEAN PIAGET POTENCIA INSERCI&#211N LABORAL DE SUS ALUMNOS CON AYUDA DE BIGGI</a>
+			</ol>
+			<ol>
+				<small>25/10/2012</small></br>
+				<a href="noticias/noticia39.htm" target="view_noti" >PIZZER&#205A DE ARICA APUESTA POR BIGGI</a>
+			</ol>
+			<ol>
+				<small>09/10/2012</small></br>
+				<a href="noticias/noticia38.htm" target="view_noti" >BIGGI PRESENTE EN REMODELACION DE olCEO DE APolCACI&#211N</a>
+			</ol>
+			<ol>
+				<small>08/10/2012</small></br>
+				<a href="noticias/noticia37.htm" target="view_noti" >INTERNADO NACIONAL BARROS ARANA APUESTA POR BIGGI PARA SU REMODELACI&#211N.</a>
+			</ol>
+			<ol>
+				<small>02/10/2012</small></br>
+				<a href="noticias/noticia36.htm" target="view_noti" >UNIVERSIDAD CATOolCA DE TEMUCO REMODELA SUS CASINOS CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>01/10/2012</small></br>
+				<a href="noticias/noticia35.htm" target="view_noti" >BIGGI PRESENTE EN UST DE PUERTO MONTT</a>
+			</ol>
+			<ol>
+				<small>25/09/2012</small></br>
+				<a href="noticias/noticia34.htm" target="view_noti" >CRISTALER&#237AS CHILE EQUIPA SU CASINO CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>24/09/2012</small></br>
+				<a href="noticias/noticia33.htm" target="view_noti" >BIGGI EN CLUB DEPORTIVO UC</a>
+			</ol>
+			<ol>
+				<small>04/09/2012</small></br>
+				<a href="noticias/noticia32.htm" target="view_noti" >INAUGURAN RESTAURANT olMA olMON CON EQUIPOS BIGGI</a>
+			</ol>
+			<ol>
+				<small>03/09/2012</small></br>
+				<a href="noticias/noticia31.htm" target="view_noti" >BIGGI OTORGA CAPACITACION EN CASINO DE EMPRESA DERCO</a>
+			</ol>
+			<ol>
+				<small>27/08/2012</small></br>
+				<a href="noticias/noticia30.htm" target="view_noti" >PRESENTES EN ColNICA RE&#241ACA</a>
+			</ol>
+			<ol>
+				<small>14/08/2012</small></br>
+				<a href="noticias/noticia29.htm" target="view_noti" >BIGGI EN REMODELACION DE CASINOS DE LA PUCV</a>
+			</ol>
+			<ol>
+				<small>13/08/2012</small></br>
+				<a href="noticias/noticia28.htm" target="view_noti" >BODEGAS SAN FRANCISCO LA FARFANA EQUIPA SU CASINO CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>13/08/2012</small></br>
+				<a href="noticias/noticia27.htm" target="view_noti" >BIGGI EN SEGUNDA VERSION DE ESPACIO FOOD&SERVICE</a>
+			</ol>
+			<ol>
+				<small>07/08/2012</small></br>
+				<a href="noticias/noticia26.htm" target="view_noti" >BIGGI UNA VEZ M&#193S EN LA EDUCACI&#211N</a>
+			</ol>
+			<ol>
+				<small>06/08/2012</small></br>
+				<a href="noticias/noticia25.htm" target="view_noti" >BIGGI EN LA UNIVERSIDAD DIEGO PORTALES</a>
+			</ol>
+			<ol>
+				<small>24/07/2012</small></br>
+				<a href="noticias/noticia24.htm" target="view_noti" >NUESTROS EQUIPOS EN HOSPITAL DE TEMUCO</a>
+			</ol>
+			<ol>
+				<small>20/07/2012</small></br>
+				<a href="noticias/noticia23.htm" target="view_noti" >BIGGI EQUIPA CASINO EN MUNICIPAolDAD DE SANTIAGO</a>
+			</ol>
+			<ol>
+				<small>19/07/2012</small></br>
+				<a href="noticias/noticia22.htm" target="view_noti" >BIGGI EN NUEVO CASINO DEL DUOC UC PUENTE ALTO</a>
+			</ol>
+			<ol>
+				<small>13/07/2012</small></br>
+				<a href="noticias/noticia20.htm" target="view_noti" >ALUMNOS DE LA UNIVERSIDAD DE PLAYA ANCHA VISITAN BIGGI</a>
+			</ol>
+			<ol>
+				<small>13/07/2012</small></br>
+				<a href="noticias/noticia21.htm" target="view_noti" >BIGGI PRESENTE EN PROYECTO HIDROELECTRICO</a>
+			</ol>
+			<ol>
+				<small>10/07/2012</small></br>
+				<a href="noticias/noticia19.htm" target="view_noti" >BIGGI PRESENTE EN BRISAS DEL MAR</a>
+			</ol>	
+			<ol>
+				<small>06/07/2012</small></br>
+				<a href="noticias/noticia16.htm" target="view_noti" >BIGGI DONA EQUIPOS PARA ESCUELA ESPECIAL ALEGR&#205A DE VIVIR</a>
+			</ol>
+			<ol>
+				<small>06/07/2012</small></br>
+				<a href="noticias/noticia17.htm" target="view_noti" >UNDURRAGA REMODELA SU CASINO CON BIGGI</a>
+			</ol>
+			<ol>
+				<small>06/07/2012</small></br>
+				<a href="noticias/noticia18.htm" target="view_noti" >BIGGI EQUIPA CAFET BISTR&#211</a>
+			</ol>
+			<ol>
+				<small>29/06/2012</small></br>
+				<a href="noticias/noticia15.htm" target="view_noti" >BIGGI PRESENTE EN EXPO HOSPITAL 2012</a>
+			</ol>
+			<ol>
+				<small>31/05/2012</small></br>
+				<a href="noticias/noticia11.htm" target="view_noti" >BIGGI EN CASINO DUOC UC</a>
+			</ol>
+			<ol>
+				<small>25/05/2012</small></br>
+				<a href="noticias/noticia10.htm" target="view_noti" >CARNES NATALES INAUGURAR&#193 SU NUEVO SUPERMERCADO</a>
+			</ol>
+			<ol>
+				<small>25/05/2012</small></br>
+				<a href="noticias/noticia12.htm" target="view_noti" >HOSPITAL JOSEFINA MARTINEZ CONFIA EN BIGGI PARA MEJORAR LA CAolDAD DE SUS AolMENTOS</a>
+			</ol>
+			<ol>
+				<small>22/05/2012</small></br>
+				<a href="noticias/noticia13.htm" target="view_noti" >BIGGI EN EL EXTREMO DE CHILE</a>
+			</ol>
+			<ol>
+				<small>22/05/2012</small></br>
+				<a href="noticias/noticia14.htm" target="view_noti" >DAFF apuesta por BIGGI</a>
+			</ol>
+			<ol>
+				<small>14/05/2012</small></br>
+				<a href="noticias/noticia3.htm" target="view_noti" >PRESENTES EN NUEVA APUESTA GASTRONOMICA</a>
+			</ol>
+			<ol>
+				<small>14/05/2012</small></br>
+				<a href="noticias/noticia4.htm" target="view_noti" >OPTARON POR LA CAolDAD DE NUESTROS ESTANTES</a>
+			</ol>
+			<ol>
+				<small>14/05/2012</small></br>
+				<a href="noticias/noticia5.htm" target="view_noti" >PROYECTO PERGOLA UC</a>
+			</ol>
+			<ol>
+				<small>14/05/2012</small></br>
+				<a href="noticias/noticia6.htm" target="view_noti" >EQUIPAMIENTO DE MAXIMA CAolDAD</a>
+			</ol>
+			<ol>
+				<small>02/05/2012</small></br>
+				<a href="noticias/noticia2.htm" target="view_noti" >CAolDAD PARA AolMENTACION</a>
+			</ol>
+        </aside>
+        <article>
+        	<iframe name="view_noti" frameborder ="0" scrolling="auto" width="700" height="1110" src="noticias/{NOTICIA_INI}"> </iframe>
+        </article>
+	</div>
+
+	<!-- CONTACTO ////////////////////////////////-->
+
+	<!-- footer-->
+	{K_FOOTER_WEB}
+	<!-- footer -->	
+	<script>
+		$('.maps').click(function () {
+		 $('.maps iframe').css("pointer-events", "auto");
+		});
+	
+		$( ".maps" ).mouseleave(function() {
+		  $('.maps iframe').css("pointer-events", "none"); 
+		});
+	</script>
+	<!-- Modal -->
+	<script type='text/javascript' src='common_appl/js_modal/jquery.js'></script>
+	<script type='text/javascript' src='common_appl/js_modal/jquery.simplemodal.js'></script>
+	<script type='text/javascript' src='common_appl/js_modal/basic.js'></script>
+	<script type='text/javascript' src='common_appl/general_biggi.js'></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>

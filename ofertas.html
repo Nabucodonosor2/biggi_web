@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+		<!--HABILITA GOOGLE Analytics 06-05-2022 -->
+		<!-- Google tag (gtag.js) -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-K5FKVETHWP"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-K5FKVETHWP');
+		</script>
+		
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+	<title>Representantes | Biggi</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="Respond-Menu/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="css/styleContacto.css">
+	<link rel="stylesheet" type="text/css" href="css/styleInterior.css">
+	<!-- el archivo basic.css determina el estilo de la ventana modal --> 
+	<link rel="stylesheet" href="common_appl/css_modal/basic.css">
+	
+	<style type="text/css">
+		body{background:#e5e5e5;}
+	</style>
+</head>
+
+<body>
+	<!-- Contenido de la ventana, debe ir con el id="basic-modal-content" -->
+	<div id="basic-modal-content">
+	</div>
+	<header>
+		<a href="index.php" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="productos.php" >Productos</a></li>
+				<!-- <li><a href="econoline.php">Econoline</a></li> -->
+				<li><a href="representantes.php">Representantes</a></li>
+				<li style="display:{VISIBLE_OFERTAS}"><a href="ofertas.php" class="current">Ofertas</a></li>
+				<li><a href="cotizador.php">Cotizador</a></li>
+				<li class="busc">
+					<form action="buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+						<input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto"">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Buscador Responsive ---->
+	<li class="buscResp">
+        <form action="{K_ROOT_URL}buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+            <input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto">
+        </form>
+    </li>
+	<div class="subHeader">
+		<h1>Ofertas</h1>
+	</div>
+	
+	
+	<div class="ofrts">
+		<ul>
+			<!-- startBlock(OFERTAS) -->
+			<!-- UNIDAD ///////////////////////////////////-->
+			<li  style="background:url(imagen_chica.php?cod_producto={COD_PRODUCTO_ENCODE1}) center 50px #fff no-repeat;">
+				<div>
+					<h1>{NOM_PRODUCTO}</h1>
+				</div>
+				<div class="bann"></div>
+				{ATRIBUTOS}
+				<div class="precio">
+					<label>{COD_PRODUCTO}</label>
+					<h5>Precio: {PRECIO_OFERTA} + IVA</h5>
+					<h2>{PRECIO_ANTES_OFERTA}</h2>
+				</div>
+				<!--<a href="#">
+					<div class="cotizador"><h5>Agregar al cotizador</h5></div>
+				</a>-->
+			</li>
+			<!-- FIN UNIDAD //////////////////////////////-->
+			<!-- endBlock(OFERTAS) -->  
+			<li><!--truco rasca, no eliminar--></li>
+		</ul>
+	</div>
+	
+	<!-- CONTACTO ////////////////////////////////-->
+
+	<!-- footer-->
+	{K_FOOTER_WEB}
+	<!-- footer -->	
+	<script>
+		$('.maps').click(function () {
+		 $('.maps iframe').css("pointer-events", "auto");
+		});
+	
+		$( ".maps" ).mouseleave(function() {
+		  $('.maps iframe').css("pointer-events", "none"); 
+		});
+	</script>
+	<!-- Modal -->
+	<script type='text/javascript' src='common_appl/js_modal/jquery.js'></script>
+	<script type='text/javascript' src='common_appl/js_modal/jquery.simplemodal.js'></script>
+	<script type='text/javascript' src='common_appl/js_modal/basic.js'></script>
+	<script type='text/javascript' src='common_appl/general_biggi.js'></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+h1{font-family: 'Montserrat', sans-serif;color:#454545;font-weight:700;font-size:14px;text-align:center;text-transform:uppercase;}
+h2{font-family: 'Quattrocento Sans', sans-serif;font-weight: 400;margin-top:10px;color:#878787;text-align:center;}
+
+.empresa{background:#f7f7f7;padding-top:60px;text-align:center;}
+.empresa li{float:left;width:33.3%;position:relative;padding-bottom:40px;}
+
+.subEmpresa{max-width:1170px;margin:0 auto;overflow:auto;padding-top:40px;}
+.subEmpresa li{padding-top:100px;}
+.subEmpresa li:nth-child(1){background:url(../images/empIco01.png) no-repeat top center;}
+.subEmpresa li:nth-child(2){background:url(../images/empIco02.png) no-repeat top center;}
+.subEmpresa li:nth-child(3){background:url(../images/empIco03.png) no-repeat top center;}
+.subEmpresa p{font-family:helvetica,arial, sans-serif;font-size:14px;color:#8a8a8a;margin:20px 40px;line-height:20px;}
+
+.productos{background:#f1f1f1;padding-top:50px;overflow:auto;padding-bottom:100px;}
+.productos ul{margin-top:50px;}
+.productos li h1{color:white;text-align:right;margin-right:20px;}
+.productos li{float:left;height:365px;width:33.33%;}
+  .productos li:nth-child(1){background:url(../images/homeproductos.jpeg) no-repeat left;cursor:pointer;}
+  .productos li:nth-child(2){background:url(../images/imgPrd2.jpg) no-repeat right;cursor:pointer;}
+  .productos li:nth-child(3){background:url(../images/homecotizador.png) no-repeat left;cursor:pointer;}
+.productos li div{width:230px;height:325px;background:#2d2d30;padding-top:40px;}
+.productos p{margin:160px 20px 0 20px;text-align:right;font-size:13px;line-height:18px;color:#fff;opacity: 0.5;filter: alpha(opacity=50); /* For IE8 and earlier */}
+
+.ofertas{background:url(../images/bgOfert.jpg) center;padding:90px 0;}
+.innerOfertas{max-width:1170px;margin:0 auto;}
+.oftTxt{width:270px;float:left;}
+.oftTxt h1{text-align:left;color:#dadada;}
+.oftTxt h2{text-align:left;color:#666;margin-top:20px;}
+.oftTxt p{margin-top:50px;color:#888;font-size:13px;line-height:18px;}
+.oftContent{width:870px;margin-left:300px;overflow:auto;}
+.boucher{width:260px;height:260px;margin:0 0 10px 10px;background:#fff;float:left;}
+.precio{background:#ed1c24;padding:10px 15px;font-family: 'Montserrat', sans-serif;font-weight:700;color:#fff;margin-top:140px;position:absolute;}
+.masOfrt{background:#ed1c24;float:left;margin-top:24px;padding:8px;}
+.masOfrt a{color:white;font-family: 'Montserrat', sans-serif;font-size:12px;}
+.bouName{height:14px;background:#777;font-family: 'Montserrat', sans-serif;font-size:12px;color:#eee;padding:14px;overflow:hidden;}
+
+.noticias{background:#f1f1f1;padding:90px 0;}
+.innerNoticias{width:1170px;margin:0 auto;text-align:center;overflow:auto;}
+.innerNoticias li{width:270px;float:left;margin-right:28px;margin-bottom:12px;}
+  .innerNoticias li:last-child{margin:0;}
+.innerNoticias li h1{margin:0 14px;text-align:left;}
+.innerNoticias li h2{text-align:left;margin:14px;}
+.innerNoticias li p{margin:14px;font-size:13px;color:#999;text-align:left;line-height:16px;margin-top:30px; line-height:20px;}
+.not{background:#fff;height:420px;overflow:hidden;border-bottom:1px #dbdbdb solid;}
+.not img{width:auto;margin-bottom:14px;}
+a .verNot{background:#82c6bf;margin:14px;font-family: 'Montserrat', sans-serif;font-weight:400;color:#fff;text-transform:uppercase;font-size:12px;float:left;padding:14px;border-radius:5px;-moz-border-radius:5px;-khtml-border-radius:5px;-webkit-border-radius:5px;}
+  a .verNot:hover{background:#72b5ae;}
+  
+ /* Arriendos y Reciclados */
+.ayr{background:#ccc; padding:30px 0; overflow:auto;}
+.ayr h1{text-align:left; margin:0 50px; margin-bottom:14px;}
+.ayr h2{text-align:left; margin:0 50px; margin-bottom:14px;}
+.ayr p{margin:0 50px;color:#444; margin-bottom:10px; font-size:12px; line-height:16px;}
+.ayr .fini{margin:0 50px;color:#a00;}
+.ayr ul{width:1170px; margin:0 auto;}
+.ayr li{float:left; width:570px; padding-top:160px; padding-bottom:30px;height:240px;}
+.ayr li:first-child{margin-right:30px; background:url(../images/arriendos.jpg) no-repeat #f0f0f0;}
+.ayr li:last-child{background:url(../images/reciclados.jpg) no-repeat #f0f0f0;}
+ 
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 800px) {
+  .subEmpresa li{float:none;width:100%;margin-top:50px;}
+  .subEmpresa li:first-child{margin-top:0;}
+  .productos li{width:100%;}
+}
+
+@media only screen and (max-width : 1170px) {
+  .oftTxt{margin-left:20px;}
+  .oftContent{width:580px;}
+
+  .innerNoticias{width:600px;}
+  
+  .ayr ul{width:900px; margin:0 auto;}
+  .ayr li{width:435px;height:310px;margin-bottom:20px;}
+}
+@media only screen and (max-width : 900px) {
+  .oftTxt{margin-left:20px;}
+  .oftContent{width:295px;}
+  
+  .ayr ul{width: auto; margin:0 20px;}
+  .ayr li{width:100%;height:310px;height:inherit;}
+}
+@media only screen and (max-width : 600px) {
+  .innerOfertas{margin:40px;}
+  .oftTxt{width:80%;margin:0 auto;margin-bottom:40px;}
+  .oftContent{width:100%;margin:0 auto;padding-bottom:20px;}
+  .boucher{margin:10px 0 0 0;}
+
+  .innerNoticias{width:300px;}
+}

@@ -1,0 +1,95 @@
+#aDiv {
+  width: 70%;
+  height: 150px;
+  margin:13% 0 33px 5px;
+}
+.scrollable {
+  position: relative;
+  overflow: hidden;
+  
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+.scrollable .scroll {
+  position: absolute;
+  top: 0;
+  right: 4px;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  width: 10px;
+  height: 100%;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  
+  transition: width 300ms, opacity 300ms, background-color 300ms;
+  -moz-transition: width 300ms, opacity 300ms, background-color 300ms;
+  -webkit-transition: width 300ms, opacity 300ms, background-color 300ms;
+  -ms-transition: width 300ms, opacity 300ms, background-color 300ms;
+  
+  
+  transform: translate(-50%, %0);
+  -moz-transform: translate(-50%, %0);
+  -webkit-transform: translate(-50%, 0%);
+  -ms-transform: translate(-50%, %0);
+}
+
+.scrollable:hover .scroll, .scrolling .scroll {
+  opacity: 1;
+}
+
+.scrollable .scroll:hover  {
+  width: 12px;
+  
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.scrollable .scroll span, .scrolling .scroll span {
+  width: 100%;
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  
+  transition: top 10ms;
+  -webkit-transition: top 10ms;
+  -ms-transition: top 10ms;
+  -moz-transition: top 10ms;
+}
+
+.scrollable:hover .scroll span, .scrolling .scroll span {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.scrolling {
+  -webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+@media only screen and (max-width : 1170px){
+
+}
+@media only screen and (max-width : 920px){
+#aDiv {
+  width: 68%;
+  height: 150px;
+  margin:14% 0 11% 15%;
+}
+}
+@media only screen and (max-width : 780px){
+	#aDiv {
+	  width: 69%;
+	  height: 150px;
+	  margin:11% 0 8% 5%;
+	}
+}
+@media only screen and (max-width : 620px){
+	#aDiv {
+	  width: 91%;
+	  height: 150px;
+	  margin:20% 0 5% 5%;
+	}
+}

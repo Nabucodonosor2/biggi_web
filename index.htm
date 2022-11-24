@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+	<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>Biggi | Soluciones para Grandes Cocinas</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1"/>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151209999-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-151209999-1');
+	</script>
+	<script charset="iso-8859-1" src="js/jquery-2.1.3.min.js" type="text/javascript"></script>
+	<script charset="iso-8859-1" src="js/font_montserrat.js" type="text/javascript"></script>
+	<script charset="iso-8859-1" src="js/font_quattrocento.js" type="text/javascript"></script>
+	<!-- 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700' rel='stylesheet' type='text/css'>
+	 -->
+	<script charset="iso-8859-1" src="../../commonlib/trunk/script_js/general.js" type="text/javascript"></script>
+	<style>
+		li{font-family: 'Montserrat', sans-serif;font-weight:700;}
+		.input_text{
+			width:98%;
+		}
+		.invert {
+			filter: invert(90%);
+		}
+		.ayr .derecho {
+		    color: #444;
+		    font-size: 12px;
+		    line-height: 16px;
+		    margin: 0 50px 10px;
+		}
+		.ayr .fini {
+    		font-size: 12px;
+		}
+	</style>
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/reset.css"/>
+	<link rel="stylesheet" href="css/fontawesome/css/all.css">
+	<!-- INI INSTALACION WHATSAPP -->
+	<link rel="stylesheet" href="css/stylews.css">
+	<!-- FIN INSTALACION WHATSAPP -->
+	<link rel="stylesheet" href="Respond-Menu/css/styles.css"/>
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styleContacto.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styleInterior.css">
+	<link rel="stylesheet" type="text/css" href="Slider/Style-slider.css"/>
+	<!--[if IE]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+	<!-- Slider -->
+	<!-- include jQuery library -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+	<!-- include Easing plugin -->
+	<script type="text/javascript" src="Slider/jquery.easing.1.3.js"></script>
+	<!-- include Cycle plugin -->
+	<script type="text/javascript" src="Slider/cycle.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function () {
+		// Set Cycle options
+		$('#slideshow').cycle({
+			fx: 'scrollHorz',
+			speed: 2000,
+			timeout: 3000,
+			pager: '.nav',
+			prev: '.prev',
+			next: '.next',
+			easing: 'easeInOutQuint'
+		});
+	});
+	function validacion() {
+		var nombre = document.getElementById("NOM_CONTACTO").value;
+		var cod_ciudad = document.getElementById('COD_CIUDAD').value;
+		var telefono = document.getElementById("TELEFONO_CONTACTO").value;
+		var vl_norobot_cont = document.getElementById("NO_SOY_ROBOT_CONTACTO").value;
+		
+		if(nombre.length==0){
+			alert("Por favor ingresar Nombre Contacto");
+			return false;
+		}
+		if(cod_ciudad.length==0){
+			alert("Por favor seleccionar Ciudad");
+			return false;
+		}
+		if(telefono.length==0){
+			alert("Por favor escriba su telefono");
+			return false;
+		}
+		if(vl_norobot_cont=='N'){
+			alert("Debe validar CAPTCHA");
+			return false;
+		}
+	}
+	function validate_mail(theElement ){
+		var s = theElement.value;	
+		var filter=/^[A-Za-z][A-Za-z0-9_.-]*@[A-Za-z0-9_-]+\.[A-Za-z0-9_.-]+[A-za-z]$/;
+		if (s.length == 0 ) return true;
+		if (filter.test(s))
+			return true;
+		else
+			alert("Ingrese una dirección de correo válida");
+			theElement.value='';
+			theElement.focus();
+		return false;
+	}
+	function f_valida_soy_robot(){
+		document.getElementById("NO_SOY_ROBOT_CONTACTO").value = 'S';	
+	}
+	</script>
+
+
+	<script type="text/javascript">
+		function popUp(URL)
+		{
+			day = new Date();
+			id = day.getTime();
+			eval("page" + id + " = window.open(URL, '" + id + "', 'status=0,toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=790,left = 250,top = 100');");
+		};
+	</script>
+
+	<!-- Start of  Zendesk Widget script CHAT BIGGI 19082019 --> 
+	<!-- <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=829e0a16-e178-4d11-b406-018c4d636645"> </script> --> 
+	<!-- End of  Zendesk Widget script -->
+</head>
+<!-- <body onload="javascript:popUp('Feliz_Navidad_BIGGI_2021.htm')"> -->
+ <body>
+	<header>
+		<a href="index.php" id="logo"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.php">Home</a></li>
+				<li><a href="productos.php">Productos</a></li>
+				<!-- <li><a href="econoline.php">Econoline</a></li> -->
+				<li><a href="representantes.php">Representantes</a></li>
+				<li style="display:{VISIBLE_OFERTAS}"><a href="ofertas.php">Ofertas</a></li>
+				<li><a href="cotizador.php">Cotizador</a></li>
+				<li class="busc">
+					<form action="buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+						<input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto">
+					</form>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<!-- Buscador Responsive ---->
+	<li class="buscResp">
+        <form action="{K_ROOT_URL}buscador/buscador_new.php" id="formBusq" name="formBusq" method="get">
+            <input placeholder="Palabra o código" name="busca_producto" type="text" class="buscar" id="busca_producto">
+        </form>
+    </li>
+	<!-- INI INSTALACION WHATSAPP -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<a href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank" class="float" target="_blank">
+			<i class="fa fa-whatsapp my-float"></i>
+		</a>
+	<!-- FIN INSTALACION WHATSAPP -->	
+
+	<div id="slideshow">
+	  <div class="sld1">
+			<h1>Equipos industriales para su negocio</h1>
+			<p>Una completa variedad de productos especializados.</p>
+		</div>
+	  <!-- <div class="sld4">
+			<h1></h1>
+			<p></p>
+		</div>	 -->
+	  <div class="sld2">
+			<!-- <h1>Un respaldo de más de 70 años en el mercado</h1> ---->
+			<!-- <p>Profesionales, técnicos y equipos especializados.</p> ---->
+			<h1>Un mundo de soluciones para su cocina</h1>
+			<p>Garantía de calidad y equipamiento.</p>
+		</div>
+	  <div class="sld3">
+			<h1>Respaldo de más de 70 años en el mercado</h1>
+			<p>Equipos para grandes cocinas.</p>
+		</div>
+	</div>
+	<div class="prev-next">
+		<span class="prev"><a href="#"><img src="Slider/sw_l.png"></a></span>
+		<span class="next"><a href="#"><img src="Slider/sw_r.png"></a></span>
+	</div>
+
+	
+	<!-- EMPRESA /////////////////////////////////// -->
+	<!--
+	<div class="empresa">
+	
+		<h1>ESTAMOS 100% OPERATIVOS</h1>
+		<h2>LUNES A VIERNES, DE 08:30 A 18:00 HRS. / AVENIDA PORTUGAL 1726 - SANTIAGO.</h2>
+		<h2>TELEFONOS:</h2>
+		<br>
+		<b><h1>224126200 - 224126203 - 224126202 / INFO@BIGGI.CL</h1></b>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h2></h2>
+		<h1>La Empresa</h1>
+		<h2>Desde 1948, equipos para grandes cocinas.</h2>
+		<div class="subEmpresa">
+			<ul>
+				<li>
+					<h1>Biggi</h1>
+					<p>Nos dedicamos al diseño de equipos para cocinas industriales hace más de setenta años. Apuntamos a mejorar continuamente nuestro servicio, para así elevar la calidad de nuestros productos.</p>
+				</li>
+				<li>
+					<h1>Historia</h1>
+					<p>Fundada en 1948, se especializó en la fabricación de hornos industriales - desde entonces se han incorporado diversas líneas de productos convirtiéndose en líder del rubro en el mercado local.</p>
+				</li>
+				<li>
+					<h1>Proyectos</h1>
+					<p>Consolidada en el mercado de concesionarias y catering, Biggi ha incursionado en equipamiento para los más variados rubros con diferentes requerimientos y especificaciones. </p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	-->
+		<div class="empresa">
+			<h1>VISÍTENOS | CONTÁCTENOS</h1>
+			<h2>AVENIDA PORTUGAL 1726 - SANTIAGO / LUNES A VIERNES DE 08:30 A 18:00 HRS.</h2>
+			<br>
+			
+			<!-- INI INSTALACION WHATSAPP -->
+			<b>
+				<h1>
+					<span class="fas fa-phone-alt">&nbsp;</span>
+					<a class="tfs_biggi_1" href="tel:+56224126200">22 412 6200</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126201">22 412 6201</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126202">22 412 6202</a><span>&nbsp;-</span>
+					<a class="tfs_biggi_1" href="tel:+56224126203">22 412 6203</a>
+					<br>
+					<br>
+					<b>
+						<p>
+							<span class="far fa-envelope">&nbsp;</span>
+							<a class="tfs_biggi_1" href="mailto:info@biggi.cl?subject=Contacto via web Comercial BIGGI">INFO@BIGGI.CL</a>
+						</p>
+					</b>
+					<br>
+					<br>
+					<a class="tfs_biggi_99" href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank">Escríbenos por WhatsApp presionando aquí&nbsp;</a>
+					<a class="tfs_biggi_99" href="https://api.whatsapp.com/send?phone=+56966770518&text=Hola%20les%20escribo%20desde%20link%20WhatsApp%20Web%20BIGGI" target="_blank">
+						<span class="fa-brands fa-whatsapp fa-2xl" >&nbsp;</span>
+					</a>
+				</h1>
+			</b>
+			<!-- FIN INSTALACION WHATSAPP -->			
+			
+
+
+			<br>
+
+			<hr style="width:50%">
+			<br>
+			<h2></h2>
+			<!-- <h1>La Empresa.</h1> -->
+			<!-- <h2>DESDE 1948, EQUIPOS PARA GRANDES COCINAS.</h2> -->
+			<div class="subEmpresa">
+				<ul>
+					<li>
+						<h1>Biggi</h1>
+						<!-- <p>Nos dedicamos al diseño de equipos para cocinas industriales hace más de setenta años. Apuntamos a mejorar continuamente nuestro servicio, para así elevar la calidad de nuestros productos.</p> -->
+						<p>Diseñamos, importamos y comercializamos equipos para cocinas industriales hace más de 70 años. Nuestra vocación permanente es otorgar el mejor servicio a nuestros clientes.</p>
+					</li>
+					<li>
+						<h1>Historia</h1>
+						<!-- <p>Fundada en 1948, se especializó en la fabricación de hornos industriales - desde entonces se han incorporado diversas líneas de productos convirtiéndose en líder del rubro en el mercado local.</p>-->
+						<p>Fundada en 1948, nos especializamos en un inicio en la fabricación de hornos industriales, para luego incorporar diversas líneas de productos para convertirnos en líderes en el rubro en el mercado local.</p>
+					</li>
+					<li>
+						<h1>Proyectos</h1>
+						<!-- <p>Consolidada en el mercado de concesionarias y catering, Biggi ha incursionado en equipamiento para los más variados rubros con diferentes requerimientos y especificaciones. </p>-->
+						<p>Consolidados en el mercado de las concesionarias, el catering y el rubro minero, diseñamos los proyectos gastronómicos de principio a fin, incluyendo la instalación, puesta en marcha y el servicio técnico. </p>
+					</li>
+				</ul>
+			</div>
+		</div>
+	<!-- PRODUCTOS /////////////////////////////////// -->
+	<!--
+	<div class="productos">
+		<h1>Productos altamente especializados</h1>
+		<h2>Conozca más sobre nuestros productos y beneficios.</h2>
+		<ul>
+			<li>
+				<a href="productos.php">
+					<div>
+						<h1>Productos</h1>
+						<p>Encuentre aquí toda la gama de productos Biggi, con su reconocida calidad. Ideales para equipar cualquier tipo de proyecto gastronómico que tenga en mente.</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="econoline.php">
+					<div style="background:#ed1c24;">
+						<h1>Econoline</h1>
+						<p>Toda la calidad BIGGI a los precios más convenientes. Ideal para restaurantes, cafeterías y fuentes de soda. Visite ahora nuestra galería de productos.</p>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a href="cotizador.php">
+					<div>
+						<h1>Cotice en Linea</h1>
+						<p>Listados de precios, presupuestos en línea, seguimiento a clientes, todo esto y más en nuestro cotizador en línea.</p>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	-->
+		<div class="productos">
+			<h1>Productos altamente especializados</h1>
+			<h2>Conozca más sobre nuestros productos y beneficios.</h2>
+			<ul>
+				<li>
+					<a href="productos.php">
+						<div>
+							<h1>Productos</h1>
+							<!--<p>Encuentre aquí toda la gama de productos Biggi, con su reconocida calidad. Ideales para equipar cualquier tipo de proyecto gastronómico que tenga en mente.</p>-->
+							<p style="opacity: 1; font-size: 14px;">Encuentre aquí toda la gama de equipos BIGGI con su reconocida calidad. Ideales para implementar cualquier tipo de proyecto gastronómico que tenga en mente.</p>
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="index.php">
+						<div style="background:#ed1c24;">
+							<h1></h1>
+							<!--<p>Toda la calidad BIGGI a los precios más convenientes. Ideal para restaurantes, cafeterías y fuentes de soda. Visite ahora nuestra galería de productos.</p>
+							<p style="opacity: 1; font-size: 14px;">Toda la calidad de productos BIGGI al mejor precio, encuéntrelos aquí. Ideales para restaurantes, cafeterías y fuentes de soda. Conozca ahora nuestra línea de productos econoline.</p> -->
+						</div>
+					</a>
+				</li>
+				
+				<li>
+					<a href="cotizador.php">
+						<div>
+							<h1>Cotice en Linea</h1>
+							<!--<p>Listados de precios, presupuestos en línea, seguimiento a clientes, todo esto y más en nuestro cotizador en línea.</p>-->
+							<p style="opacity:1 !important; color: white; font-size: 14px;">Díganos qué equipos necesita, agréguelos al cotizador, déjenos sus datos y ¡Listo!</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+		</div>	
+	
+	<!-- OFERTAS /////////////////////////////////// -->
+	<div class="ofertas" style="display:{VISIBLE_OFERTAS}">
+		<div class="innerOfertas">
+			<div class="oftTxt">
+				<h1>Ofertas Especiales</h1>
+				<h2>Aproveche nuestros productos en liquidación a precios rebajados</h2>
+				<div class="masOfrt"><a href="ofertas.php">Ver todas las ofertas</a></div>
+			</div>
+			<div class="oftContent">
+				{OFERTA_1}
+				{OFERTA_2}
+				{OFERTA_3}
+				{OFERTA_4}
+				{OFERTA_5}
+				{OFERTA_6}
+			</div>
+		</div>
+	</div>
+	
+	
+	<!-- ARRIENDOS Y RECICLADOS ///////////////////// -->
+	<div class="ayr">
+	    <ul>
+	        <li>
+	            <h1>Arriendos</h1>
+	            <h2>Comience su proyecto, o potencie el actual, con los beneficios y facilidades que le permite el arriendo de nuestros equipos.</h2>
+	            <p>Por medio del arriendo no se inmoviliza capital, ni se adquieren grandes compromisos financieros, su capital libre puede ser usado en otras inversiones.</p>
+	            <p>Nuestra amplia y variada oferta de equipos, nos permite ajustarnos a las necesidades de cada proyecto y ofrecer soluciones a la medida de cada cliente.</p>
+	            <p>Reduzca riesgos de obsolescencia y mantenga la continuidad de su negocio con nuestro amplio parque de equipos en arriendo.</p>
+	            <p class="fini">Tome contacto con nuestra área especializada en arriendos al 22412 6200, o escribanos a rental@biggi.cl y buscaremos la mejor alternativa para usted.</p>
+	        </li>
+	        <li>
+	            <h1>Productos Reciclados</h1>
+	            <h2>Maximice los beneficios de su negocio con equipos reciclados a la altura de sus necesidades.</h2>
+	            <p class="derecho">Mas de 70 años de experiencia en el rubro nos respaldan para comenzar a cubrir esta nueva necesidad del mercado, y que a su vez, es un gesto de consideración y responsabilidad con nuestro medio ambiente.</p>
+	            <p class="derecho">A nuestra oferta de equipos de primera linea y econoline, sumamos desde ahora nuestra nueva oferta en equipos reciclados.</p>
+	            <p class="fini">Tome contacto con nuestra área de ventas al 22412 6200, y le ayudaremos con la misma calidad y dedicación de siempre.</p>
+	        </li>
+	    </ul>
+	</div>
+	<!-- NOTICIAS /////////////////////////////////// -->
+	<!-- <div class="noticias">
+		<div class="innerNoticias">
+			<ul>
+				<li>
+					<h1>Noticias</h1>
+					<h2>novedades y proyectos</h2>
+					<p>Nuestra experiencia se ve reflejada en nuestro servicio. A continuación algunos de nuestros proyectos.</p>
+					<a href="noticias.php">
+						<div class="verNot">Ver todas las noticias</div>
+					</a>
+				</li>
+				<li class="not">
+					<a href="noticias.php?noticia=noticia151.htm">
+					<img src="images/images_news/noticia151(1).jpg" width="270" height="186" border="0">
+					<h1>NAVIDAD 2015 EN BIGGI</h1>
+					<p>CELEBRACION NAVIDAD: UNA FIESTA PARA COMPARTIR Y DISFRUTAR</p>
+					</a>
+				</li>
+				<li class="not">
+					<a href="noticias.php?noticia=noticia150.htm">
+					<img  src="images/images_news/noticia150(1).jpg" width="270" height="186" border="0">
+					<h1>COLEGIO SAGRADOS CORAZONES ENTREGA SERVICIO DE EXCELENCIA EN ALIMENTACION</h1>
+					<p>BIGGI COMPROMETIDO  CON LA EDUCACI&Oacute;N EN CHILE </p>
+					</a>
+				</li>
+				<li class="not">
+					<a href="noticias.php?noticia=noticia149.htm">
+					<img src="images/images_news/noticia149(1).jpg" width="270" height="186" border="0">
+					<h1> BODEGAS SAN FRANCISCO : M&Aacute;S DE 10 A&Ntilde;OS TRABAJANDO EN ALIANZA CON BIGGI PARA UN SERVICIO DE EXCELENCIA</h1>
+					<p>BODEGAS SAN FRANCISCO y BIGGI, se unen para entregar un servicio de alimentaci&oacute;n de calidad.</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<!-- footer-->
+	{K_FOOTER_WEB}
+	<!-- footer -->
+	<script>
+		$('.maps').click(function () {
+		 $('.maps iframe').css("pointer-events", "auto");
+		});
+	
+		$( ".maps" ).mouseleave(function() {
+		  $('.maps iframe').css("pointer-events", "none"); 
+		});
+	</script>
+	<!-- Modal -->
+	 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</body>
+</html>
